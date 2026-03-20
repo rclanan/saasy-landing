@@ -48,6 +48,29 @@ export const metadata: Metadata = {
   },
 };
 
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'SoftwareApplication',
+  name: 'SaaSy',
+  applicationCategory: 'BusinessApplication',
+  operatingSystem: 'Web',
+  description:
+    'AI-powered customer health scoring and churn ' +
+    'prediction for SaaS teams.',
+  url: 'https://hellosaasy.ai',
+  offers: {
+    '@type': 'AggregateOffer',
+    lowPrice: '49',
+    highPrice: '399',
+    priceCurrency: 'USD',
+  },
+  creator: {
+    '@type': 'Organization',
+    name: 'SaaSy Solutions LLC',
+    url: 'https://saasysolutionsllc.com',
+  },
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -58,6 +81,12 @@ export default function RootLayout({
       <body
         className={`${sora.variable} ${dmSans.variable} antialiased`}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(structuredData),
+          }}
+        />
         {children}
       </body>
     </html>
