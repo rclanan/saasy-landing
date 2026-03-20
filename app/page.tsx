@@ -361,6 +361,78 @@ function FeatureCard({
   );
 }
 
+/* ───────────────────────── Who It's For ────────────────────────── */
+
+function WhoItsFor() {
+  const personas = [
+    {
+      title: "Customer Success Teams",
+      description:
+        "Track every account's health in real time. Know which customers need attention before they raise a flag — and prove the impact of your interventions.",
+      benefit: "Reduce reactive firefighting by 60%",
+    },
+    {
+      title: "Revenue Leaders",
+      description:
+        "Forecast renewals with confidence. SaaSy surfaces churn risk early so your team can protect revenue before it's at stake.",
+      benefit: "Protect expansion revenue proactively",
+    },
+    {
+      title: "Product Teams",
+      description:
+        "Understand which features drive retention and which correlate with churn. Make roadmap decisions backed by customer health data.",
+      benefit: "Ship features that move the needle",
+    },
+  ];
+
+  return (
+    <section className="border-t border-saasy-border py-24 sm:py-32">
+      <div className="mx-auto max-w-6xl px-6">
+        <div className="mx-auto mb-16 max-w-2xl text-center">
+          <h2
+            className="font-[family-name:var(--font-sora)]
+              text-3xl font-bold text-white sm:text-4xl"
+          >
+            Built for every team that{" "}
+            <span className="gradient-text">owns the customer</span>
+          </h2>
+        </div>
+
+        <div className="grid gap-8 md:grid-cols-3">
+          {personas.map((persona) => (
+            <div
+              key={persona.title}
+              className="rounded-2xl border border-saasy-border
+                bg-saasy-card/50 p-8"
+            >
+              <h3
+                className="mb-3 font-[family-name:var(--font-sora)]
+                  text-xl font-semibold text-white"
+              >
+                {persona.title}
+              </h3>
+              <p
+                className="font-[family-name:var(--font-dm-sans)]
+                  leading-relaxed text-saasy-muted"
+              >
+                {persona.description}
+              </p>
+              <div
+                className="mt-4 rounded-lg bg-saasy-teal/10
+                  border border-saasy-teal/20 p-3 text-sm
+                  font-medium text-saasy-teal
+                  font-[family-name:var(--font-dm-sans)]"
+              >
+                {persona.benefit}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 /* ───────────────────────── Pricing Card ────────────────────────── */
 
 function PricingCard({
@@ -1043,6 +1115,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* ─────────────── Who It's For ─────────────── */}
+      <WhoItsFor />
 
       {/* ─────────────── Pricing ─────────────────── */}
       <section
