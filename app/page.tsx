@@ -1119,6 +1119,95 @@ function MarketingFooter() {
   );
 }
 
+/* ─────────────────────── Blog Highlights ───────────────────────── */
+
+const BLOG_POSTS = [
+  {
+    title: "How to Build a Customer Health Score That Actually Works",
+    description:
+      "Learn the framework SaaS teams use to combine usage data, support signals, and engagement metrics into a single actionable score.",
+    href: "https://saasysolutionsllc.com/blog",
+  },
+  {
+    title: "5 Early Warning Signs of Customer Churn",
+    description:
+      "The signals most teams miss — and how to catch them before renewal conversations start.",
+    href: "https://saasysolutionsllc.com/blog",
+  },
+  {
+    title: "Why Reactive Customer Success Is Costing You Revenue",
+    description:
+      "The data behind proactive vs reactive CS strategies, and how to make the shift.",
+    href: "https://saasysolutionsllc.com/blog",
+  },
+];
+
+function BlogHighlights() {
+  return (
+    <section className="border-t border-saasy-border py-24 sm:py-32">
+      <div className="mx-auto max-w-6xl px-6">
+        <div className="mx-auto mb-12 max-w-2xl text-center">
+          <h2
+            className="font-[family-name:var(--font-sora)]
+              text-3xl font-bold text-white sm:text-4xl"
+          >
+            From our blog
+          </h2>
+          <p
+            className="mt-4 font-[family-name:var(--font-dm-sans)]
+              text-lg text-saasy-muted"
+          >
+            Insights and frameworks for customer success teams.
+          </p>
+        </div>
+
+        <div className="grid gap-6 md:grid-cols-3">
+          {BLOG_POSTS.map((post) => (
+            <a
+              key={post.title}
+              href={post.href}
+              className="rounded-2xl border border-saasy-border
+                bg-saasy-card/50 p-6 hover:border-saasy-teal/30
+                transition-all duration-300 group block"
+            >
+              <h3
+                className="text-white font-[family-name:var(--font-sora)]
+                  text-lg font-semibold group-hover:text-saasy-teal
+                  transition-colors"
+              >
+                {post.title}
+              </h3>
+              <p
+                className="text-saasy-muted font-[family-name:var(--font-dm-sans)]
+                  text-sm mt-2"
+              >
+                {post.description}
+              </p>
+              <span
+                className="text-saasy-teal text-sm font-medium
+                  mt-4 inline-block"
+              >
+                Read more →
+              </span>
+            </a>
+          ))}
+        </div>
+
+        <div className="mt-10 text-center">
+          <a
+            href="https://saasysolutionsllc.com/blog"
+            className="font-[family-name:var(--font-dm-sans)]
+              text-saasy-teal text-sm font-medium
+              hover:underline transition-colors"
+          >
+            View all posts →
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 /* ═══════════════════════════ PAGE ═══════════════════════════════ */
 
 export default function Home() {
@@ -1425,6 +1514,9 @@ export default function Home() {
 
       {/* ─────────────── FAQ ─────────────────────── */}
       <FAQ />
+
+      {/* ─────────────── Blog Highlights ─────────── */}
+      <BlogHighlights />
 
       {/* ───────────── Final CTA ──────────────────── */}
       <section className="border-t border-saasy-border">
