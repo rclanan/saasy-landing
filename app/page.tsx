@@ -963,6 +963,162 @@ function MobileNav() {
   );
 }
 
+/* ─────────────────────── Marketing Footer ──────────────────────── */
+
+function MarketingFooter() {
+  return (
+    <footer className="border-t border-saasy-border bg-saasy-darker">
+      <div className="max-w-6xl mx-auto px-6 py-12">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
+          {/* Product column */}
+          <div>
+            <h4
+              className="text-white font-[family-name:var(--font-sora)]
+                text-sm font-semibold mb-4"
+            >
+              Product
+            </h4>
+            <ul className="space-y-3">
+              <li>
+                <Link
+                  href="#features"
+                  className="text-saasy-muted font-[family-name:var(--font-dm-sans)]
+                    text-sm hover:text-white transition-colors"
+                >
+                  Features
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#pricing"
+                  className="text-saasy-muted font-[family-name:var(--font-dm-sans)]
+                    text-sm hover:text-white transition-colors"
+                >
+                  Pricing
+                </Link>
+              </li>
+              <li>
+                <a
+                  href="https://app.hellosaasy.ai/integrations"
+                  className="text-saasy-muted font-[family-name:var(--font-dm-sans)]
+                    text-sm hover:text-white transition-colors"
+                >
+                  Integrations
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Company column */}
+          <div>
+            <h4
+              className="text-white font-[family-name:var(--font-sora)]
+                text-sm font-semibold mb-4"
+            >
+              Company
+            </h4>
+            <ul className="space-y-3">
+              <li>
+                <a
+                  href="https://saasysolutionsllc.com"
+                  className="text-saasy-muted font-[family-name:var(--font-dm-sans)]
+                    text-sm hover:text-white transition-colors"
+                >
+                  About
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://saasysolutionsllc.com/blog"
+                  className="text-saasy-muted font-[family-name:var(--font-dm-sans)]
+                    text-sm hover:text-white transition-colors"
+                >
+                  Blog
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Legal column */}
+          <div>
+            <h4
+              className="text-white font-[family-name:var(--font-sora)]
+                text-sm font-semibold mb-4"
+            >
+              Legal
+            </h4>
+            <ul className="space-y-3">
+              <li>
+                <Link
+                  href="/terms"
+                  className="text-saasy-muted font-[family-name:var(--font-dm-sans)]
+                    text-sm hover:text-white transition-colors"
+                >
+                  Terms of Service
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/privacy"
+                  className="text-saasy-muted font-[family-name:var(--font-dm-sans)]
+                    text-sm hover:text-white transition-colors"
+                >
+                  Privacy Policy
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Support column */}
+          <div>
+            <h4
+              className="text-white font-[family-name:var(--font-sora)]
+                text-sm font-semibold mb-4"
+            >
+              Support
+            </h4>
+            <ul className="space-y-3">
+              <li>
+                <a
+                  href="mailto:support@hellosaasy.ai"
+                  className="text-saasy-muted font-[family-name:var(--font-dm-sans)]
+                    text-sm hover:text-white transition-colors"
+                >
+                  support@hellosaasy.ai
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:sales@hellosaasy.ai"
+                  className="text-saasy-muted font-[family-name:var(--font-dm-sans)]
+                    text-sm hover:text-white transition-colors"
+                >
+                  sales@hellosaasy.ai
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Copyright */}
+        <div
+          className="border-t border-saasy-border mt-10 pt-6
+            text-center text-saasy-muted text-sm
+            font-[family-name:var(--font-dm-sans)]"
+        >
+          &copy; 2026 SaaSy. A product by{" "}
+          <a
+            href="https://saasysolutionsllc.com"
+            className="hover:text-white transition-colors"
+          >
+            SaaSy Solutions LLC
+          </a>
+        </div>
+      </div>
+    </footer>
+  );
+}
+
 /* ═══════════════════════════ PAGE ═══════════════════════════════ */
 
 export default function Home() {
@@ -1304,48 +1460,7 @@ export default function Home() {
       </section>
 
       {/* ─────────────── Footer ─────────────────── */}
-      <footer
-        className="border-t border-saasy-border bg-saasy-darker"
-      >
-        <div
-          className="mx-auto flex max-w-6xl flex-col items-center
-            justify-between gap-6 px-6 py-10 sm:flex-row"
-        >
-          <div
-            className="font-[family-name:var(--font-dm-sans)]
-              text-sm text-saasy-muted"
-          >
-            &copy; 2026 SaaSy. A product by{" "}
-            <Link
-              href="https://saasysolutionsllc.com"
-              className="text-saasy-text transition-colors
-                hover:text-saasy-teal"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              SaaSy Solutions LLC
-            </Link>
-          </div>
-          <div className="flex items-center gap-6">
-            <Link
-              href="https://app.hellosaasy.ai/terms"
-              className="font-[family-name:var(--font-dm-sans)]
-                text-sm text-saasy-muted transition-colors
-                hover:text-white"
-            >
-              Terms
-            </Link>
-            <Link
-              href="https://app.hellosaasy.ai/privacy"
-              className="font-[family-name:var(--font-dm-sans)]
-                text-sm text-saasy-muted transition-colors
-                hover:text-white"
-            >
-              Privacy
-            </Link>
-          </div>
-        </div>
-      </footer>
+      <MarketingFooter />
     </div>
   );
 }
