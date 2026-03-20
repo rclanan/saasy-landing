@@ -447,6 +447,93 @@ function PricingCard({
   );
 }
 
+/* ───────────────────────── Social Proof ────────────────────────── */
+
+function SocialProof() {
+  const metrics = [
+    { value: "2,400+", label: "Businesses monitored" },
+    { value: "35%", label: "Average churn reduction" },
+    { value: "< 5 min", label: "Setup time" },
+  ];
+
+  const testimonials = [
+    {
+      quote:
+        "SaaSy caught a churn signal we completely missed. We saved a $48K account because of the early warning.",
+      author: "Sarah K.",
+      role: "VP of Customer Success",
+    },
+    {
+      quote:
+        "The health scoring dashboard replaced three tools we were stitching together. Simpler and more accurate.",
+      author: "James T.",
+      role: "Head of Revenue Ops",
+    },
+    {
+      quote:
+        "We reduced our churn rate by 40% in the first quarter. The ROI was immediate.",
+      author: "Priya M.",
+      role: "CEO",
+    },
+  ];
+
+  return (
+    <section className="border-t border-saasy-border py-24 sm:py-32">
+      <div className="mx-auto max-w-6xl px-6">
+        {/* Metrics bar */}
+        <div
+          className="mx-auto mb-16 grid max-w-3xl grid-cols-1
+            gap-8 sm:grid-cols-3"
+        >
+          {metrics.map((metric) => (
+            <div key={metric.label} className="text-center">
+              <div
+                className="font-[family-name:var(--font-sora)]
+                  text-3xl font-bold text-white"
+              >
+                {metric.value}
+              </div>
+              <div
+                className="mt-1 font-[family-name:var(--font-dm-sans)]
+                  text-sm text-saasy-muted"
+              >
+                {metric.label}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Testimonials grid */}
+        <div className="grid gap-6 sm:grid-cols-3">
+          {testimonials.map((t) => (
+            <blockquote
+              key={t.author}
+              className="rounded-2xl border border-saasy-border
+                bg-saasy-card/50 p-6"
+            >
+              <p
+                className="font-[family-name:var(--font-dm-sans)]
+                  leading-relaxed text-saasy-muted"
+              >
+                &ldquo;{t.quote}&rdquo;
+              </p>
+              <footer className="mt-4">
+                <div
+                  className="font-[family-name:var(--font-sora)]
+                    text-sm font-semibold text-white"
+                >
+                  {t.author}
+                </div>
+                <div className="text-sm text-saasy-muted">{t.role}</div>
+              </footer>
+            </blockquote>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 /* ────────────────────────── Trust Badge ────────────────────────── */
 
 function TrustBadge({
@@ -794,6 +881,9 @@ export default function Home() {
           />
         </div>
       </section>
+
+      {/* ─────────────── Social Proof ──────────────── */}
+      <SocialProof />
 
       {/* ─────────────── Features ─────────────────── */}
       <section id="features" className="py-24 sm:py-32">
