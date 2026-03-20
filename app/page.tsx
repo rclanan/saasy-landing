@@ -440,11 +440,13 @@ function PricingCard({
   price,
   popular,
   features,
+  billingLabel,
 }: {
   name: string;
   price: number;
   popular?: boolean;
   features: string[];
+  billingLabel?: string;
 }) {
   return (
     <div
@@ -483,7 +485,7 @@ function PricingCard({
             className="font-[family-name:var(--font-dm-sans)]
               text-saasy-muted"
           >
-            /mo
+            {billingLabel ?? "/mo"}
           </span>
         </div>
       </div>
@@ -515,6 +517,64 @@ function PricingCard({
       >
         Start free trial
       </Link>
+    </div>
+  );
+}
+
+/* ─────────────────────── Pricing Toggle ────────────────────────── */
+
+function PricingToggle({
+  interval,
+  onChange,
+}: {
+  interval: "monthly" | "annual";
+  onChange: (v: "monthly" | "annual") => void;
+}) {
+  return (
+    <div className="flex items-center justify-center gap-3">
+      <div
+        className="rounded-full bg-saasy-card border
+          border-saasy-border p-1 inline-flex"
+      >
+        <button
+          type="button"
+          onClick={() => onChange("monthly")}
+          className={`rounded-full px-5 py-2
+            font-[family-name:var(--font-sora)] text-sm font-semibold
+            transition-all duration-200
+            ${
+              interval === "monthly"
+                ? "bg-saasy-teal text-saasy-dark"
+                : "text-saasy-muted hover:text-white"
+            }`}
+        >
+          Monthly
+        </button>
+        <button
+          type="button"
+          onClick={() => onChange("annual")}
+          className={`rounded-full px-5 py-2
+            font-[family-name:var(--font-sora)] text-sm font-semibold
+            transition-all duration-200
+            ${
+              interval === "annual"
+                ? "bg-saasy-teal text-saasy-dark"
+                : "text-saasy-muted hover:text-white"
+            }`}
+        >
+          Annual
+        </button>
+      </div>
+      {interval === "annual" && (
+        <span
+          className="rounded-full bg-saasy-teal/10
+            border border-saasy-teal/20 px-2.5 py-0.5
+            text-xs font-medium text-saasy-teal
+            font-[family-name:var(--font-dm-sans)]"
+        >
+          Save 20%
+        </span>
+      )}
     </div>
   );
 }
@@ -906,6 +966,17 @@ function MobileNav() {
 /* ═══════════════════════════ PAGE ═══════════════════════════════ */
 
 export default function Home() {
+  const [pricingInterval, setPricingInterval] = useState<
+    "monthly" | "annual"
+  >("monthly");
+
+  const monthlyPrices = { starter: 49, growth: 149, scale: 399 };
+  const annualPrices = { starter: 39, growth: 119, scale: 319 };
+  const prices =
+    pricingInterval === "annual" ? annualPrices : monthlyPrices;
+  const billingLabel =
+    pricingInterval === "annual" ? "/mo billed annually" : "/mo";
+
   return (
     <div className="min-h-screen">
       {/* ─────────────── Navigation ─────────────── */}
@@ -1125,7 +1196,7 @@ export default function Home() {
         className="border-t border-saasy-border py-24 sm:py-32"
       >
         <div className="mx-auto max-w-6xl px-6">
-          <div className="mx-auto mb-16 max-w-2xl text-center">
+          <div className="mx-auto mb-10 max-w-2xl text-center">
             <h2
               className="font-[family-name:var(--font-sora)]
                 text-3xl font-bold text-white sm:text-4xl"
@@ -1142,13 +1213,21 @@ export default function Home() {
             </p>
           </div>
 
+          <div className="mb-10 flex justify-center">
+            <PricingToggle
+              interval={pricingInterval}
+              onChange={setPricingInterval}
+            />
+          </div>
+
           <div
             className="mx-auto grid max-w-5xl gap-8
               lg:grid-cols-3"
           >
             <PricingCard
               name="Starter"
-              price={49}
+              price={prices.starter}
+              billingLabel={billingLabel}
               features={[
                 "Up to 100 customers",
                 "1 integration",
@@ -1159,8 +1238,9 @@ export default function Home() {
             />
             <PricingCard
               name="Growth"
-              price={149}
+              price={prices.growth}
               popular
+              billingLabel={billingLabel}
               features={[
                 "Up to 1,000 customers",
                 "5 integrations",
@@ -1172,7 +1252,8 @@ export default function Home() {
             />
             <PricingCard
               name="Scale"
-              price={399}
+              price={prices.scale}
+              billingLabel={billingLabel}
               features={[
                 "Unlimited customers",
                 "Unlimited integrations",
