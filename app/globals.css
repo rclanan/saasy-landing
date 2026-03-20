@@ -1,0 +1,132 @@
+@import "tailwindcss";
+
+@theme {
+  --color-saasy-dark: #0a0e1a;
+  --color-saasy-darker: #060912;
+  --color-saasy-card: #111827;
+  --color-saasy-card-hover: #1a2332;
+  --color-saasy-border: #1e293b;
+  --color-saasy-teal: #06d6a0;
+  --color-saasy-teal-dim: #05b88a;
+  --color-saasy-cyan: #00d4ff;
+  --color-saasy-purple: #8b5cf6;
+  --color-saasy-text: #e2e8f0;
+  --color-saasy-muted: #94a3b8;
+  --color-saasy-popular: #f59e0b;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-saasy-dark);
+  color: var(--color-saasy-text);
+}
+
+/* Gradient text utility */
+.gradient-text {
+  background: linear-gradient(
+    135deg,
+    var(--color-saasy-teal),
+    var(--color-saasy-cyan)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Glow effects */
+.glow-teal {
+  box-shadow: 0 0 40px rgba(6, 214, 160, 0.15),
+    0 0 80px rgba(6, 214, 160, 0.05);
+}
+
+.glow-border {
+  border: 1px solid rgba(6, 214, 160, 0.2);
+}
+
+/* Animated gradient background for hero */
+.hero-gradient {
+  background: radial-gradient(
+      ellipse 80% 50% at 50% -20%,
+      rgba(6, 214, 160, 0.12),
+      transparent
+    ),
+    radial-gradient(
+      ellipse 60% 40% at 80% 50%,
+      rgba(0, 212, 255, 0.06),
+      transparent
+    ),
+    radial-gradient(
+      ellipse 50% 30% at 20% 80%,
+      rgba(139, 92, 246, 0.06),
+      transparent
+    );
+}
+
+/* Grid pattern overlay */
+.grid-pattern {
+  background-image: linear-gradient(
+      rgba(30, 41, 59, 0.3) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(30, 41, 59, 0.3) 1px,
+      transparent 1px
+    );
+  background-size: 60px 60px;
+}
+
+/* Pricing card popular highlight */
+.popular-glow {
+  box-shadow: 0 0 60px rgba(6, 214, 160, 0.15),
+    0 0 120px rgba(6, 214, 160, 0.05);
+  border-color: var(--color-saasy-teal);
+}
+
+/* Subtle pulse animation for CTA */
+@keyframes pulse-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(6, 214, 160, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(6, 214, 160, 0.5);
+  }
+}
+
+.cta-pulse {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+/* Health bar animation */
+@keyframes fill-bar {
+  from {
+    width: 0%;
+  }
+  to {
+    width: var(--bar-width);
+  }
+}
+
+.health-bar {
+  animation: fill-bar 2s ease-out forwards;
+}
+
+/* Fade in on scroll */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-up {
+  animation: fade-up 0.6s ease-out forwards;
+}
