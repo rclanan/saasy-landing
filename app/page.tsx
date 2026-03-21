@@ -1126,19 +1126,19 @@ const BLOG_POSTS = [
     title: "The Complete Guide to LLC Formation in 2026",
     description:
       "Everything you need to know about registering your business entity, from state selection to EIN filing.",
-    href: "https://saasysolutionsllc.com/blog",
+    href: "https://saasysolutionsllc.com/blog/complete-guide-llc-formation-2026",
   },
   {
     title: "5 Compliance Mistakes That Cost New Businesses Thousands",
     description:
       "The permits, licenses, and filings most first-time founders miss — and how to stay ahead.",
-    href: "https://saasysolutionsllc.com/blog",
+    href: "https://saasysolutionsllc.com/blog/compliance-mistakes-new-businesses",
   },
   {
     title: "How AI Is Changing the Way Entrepreneurs Launch Businesses",
     description:
       "From automated compliance to intelligent CRM, the tools reshaping business formation.",
-    href: "https://saasysolutionsllc.com/blog",
+    href: "https://saasysolutionsllc.com/blog/ai-changing-how-entrepreneurs-launch",
   },
 ];
 
