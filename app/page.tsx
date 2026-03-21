@@ -998,13 +998,13 @@ function MarketingFooter() {
                 </Link>
               </li>
               <li>
-                <a
-                  href="https://app.hellosaasy.ai/integrations"
+                <Link
+                  href="/integrations"
                   className="text-saasy-muted font-[family-name:var(--font-dm-sans)]
                     text-sm hover:text-white transition-colors"
                 >
                   Integrations
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
