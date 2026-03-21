@@ -17,34 +17,34 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "SaaSy — Customer Health Scoring & Churn Prediction",
+  title: "SaaSy — Your AI Business Co-Founder",
   description:
-    "AI-powered customer health scoring and churn prediction " +
-    "for SaaS teams. Know which customers need attention " +
-    "before they leave.",
+    "AI-native business operating system that guides " +
+    "entrepreneurs from idea to thriving enterprise. " +
+    "Formation, compliance, CRM, and AI guidance — all in one.",
   keywords: [
-    "customer health scoring",
-    "churn prediction",
-    "SaaS",
-    "customer success",
-    "retention",
-    "AI",
+    "entrepreneur",
+    "business formation",
+    "compliance",
+    "CRM",
+    "AI guidance",
+    "business operating system",
   ],
   openGraph: {
-    title: "SaaSy — Stop Churn Before It Starts",
+    title: "SaaSy — Your AI Business Co-Founder",
     description:
-      "AI-powered customer health scoring and churn " +
-      "prediction for SaaS teams.",
+      "AI-native business operating system that guides " +
+      "entrepreneurs from idea to thriving enterprise.",
     url: "https://hellosaasy.ai",
     siteName: "SaaSy",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "SaaSy — Stop Churn Before It Starts",
+    title: "SaaSy — Your AI Business Co-Founder",
     description:
-      "AI-powered customer health scoring and churn " +
-      "prediction for SaaS teams.",
+      "AI-native business operating system that guides " +
+      "entrepreneurs from idea to thriving enterprise.",
   },
 };
 
@@ -55,8 +55,8 @@ const structuredData = {
   applicationCategory: 'BusinessApplication',
   operatingSystem: 'Web',
   description:
-    'AI-powered customer health scoring and churn ' +
-    'prediction for SaaS teams.',
+    'AI-native business operating system that guides ' +
+    'entrepreneurs from idea to thriving enterprise.',
   url: 'https://hellosaasy.ai',
   offers: {
     '@type': 'AggregateOffer',

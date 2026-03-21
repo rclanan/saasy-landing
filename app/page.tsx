@@ -5,7 +5,7 @@ import Link from "next/link";
 
 /* ───────────────────────────── Icons ───────────────────────────── */
 
-function IconHealthScore() {
+function IconCompliance() {
   return (
     <svg
       viewBox="0 0 48 48"
@@ -35,7 +35,7 @@ function IconHealthScore() {
   );
 }
 
-function IconChurn() {
+function IconCRM() {
   return (
     <svg
       viewBox="0 0 48 48"
@@ -69,7 +69,7 @@ function IconChurn() {
   );
 }
 
-function IconAlerts() {
+function IconAI() {
   return (
     <svg
       viewBox="0 0 48 48"
@@ -106,7 +106,7 @@ function IconAlerts() {
   );
 }
 
-function IconIntegrations() {
+function IconAlerts() {
   return (
     <svg
       viewBox="0 0 48 48"
@@ -239,36 +239,36 @@ function DashboardGraphic() {
             className="ml-3 font-[family-name:var(--font-dm-sans)]
               text-xs text-saasy-muted"
           >
-            Customer Health Dashboard
+            Business Command Center
           </span>
         </div>
 
-        {/* Mock health bars */}
+        {/* Business status bars */}
         <div className="space-y-4">
           {[
             {
-              name: "Acme Corp",
-              score: 92,
+              name: "LLC Formation",
+              score: "Complete",
               color: "bg-saasy-teal",
-              width: "92%",
+              width: "100%",
             },
             {
-              name: "TechStart Inc",
-              score: 78,
+              name: "Business License",
+              score: "In Progress",
               color: "bg-saasy-cyan",
-              width: "78%",
+              width: "75%",
             },
             {
-              name: "DataFlow Labs",
-              score: 45,
+              name: "Tax Registration",
+              score: "Needs Attention",
               color: "bg-saasy-popular",
               width: "45%",
             },
             {
-              name: "CloudNine SaaS",
-              score: 23,
+              name: "Insurance Setup",
+              score: "Not Started",
               color: "bg-red-500",
-              width: "23%",
+              width: "15%",
             },
           ].map((item) => (
             <div key={item.name} className="group">
@@ -318,7 +318,7 @@ function DashboardGraphic() {
             className="font-[family-name:var(--font-dm-sans)]
               text-xs text-red-400"
           >
-            2 customers need immediate attention
+            2 compliance deadlines this week
           </span>
         </div>
       </div>
@@ -366,22 +366,22 @@ function FeatureCard({
 function WhoItsFor() {
   const personas = [
     {
-      title: "Customer Success Teams",
+      title: "First-time Founders",
       description:
-        "Track every account's health in real time. Know which customers need attention before they raise a flag — and prove the impact of your interventions.",
-      benefit: "Reduce reactive firefighting by 60%",
+        "Launching your first business and overwhelmed by compliance, registration, and operations. SaaSy walks you through every step so nothing falls through the cracks.",
+      benefit: "From idea to launch, stress-free",
     },
     {
-      title: "Revenue Leaders",
+      title: "Agency Owners",
       description:
-        "Forecast renewals with confidence. SaaSy surfaces churn risk early so your team can protect revenue before it's at stake.",
-      benefit: "Protect expansion revenue proactively",
+        "Running multiple client businesses and juggling filings, renewals, and contacts across all of them. Manage up to 5 businesses from one dashboard with Growth.",
+      benefit: "One dashboard for every business",
     },
     {
-      title: "Product Teams",
+      title: "Serial Entrepreneurs",
       description:
-        "Understand which features drive retention and which correlate with churn. Make roadmap decisions backed by customer health data.",
-      benefit: "Ship features that move the needle",
+        "Scaling a portfolio of businesses and need custom automations and priority support. Unlimited businesses, dedicated onboarding, and advanced analytics on Scale.",
+      benefit: "Scale without the back-office chaos",
     },
   ];
 
@@ -393,8 +393,8 @@ function WhoItsFor() {
             className="font-[family-name:var(--font-sora)]
               text-3xl font-bold text-white sm:text-4xl"
           >
-            Built for every team that{" "}
-            <span className="gradient-text">owns the customer</span>
+            Built for every entrepreneur who{" "}
+            <span className="gradient-text">means business</span>
           </h2>
         </div>
 
@@ -583,29 +583,29 @@ function PricingToggle({
 
 function SocialProof() {
   const metrics = [
-    { value: "2,400+", label: "Businesses monitored" },
-    { value: "35%", label: "Average churn reduction" },
-    { value: "< 5 min", label: "Setup time" },
+    { value: "2,400+", label: "Businesses launched" },
+    { value: "< 2 min", label: "Average setup time" },
+    { value: "98%", label: "Trial-to-paid rate" },
   ];
 
   const testimonials = [
     {
       quote:
-        "SaaSy caught a churn signal we completely missed. We saved a $48K account because of the early warning.",
-      author: "Sarah K.",
-      role: "VP of Customer Success",
+        "SaaSy handled all the compliance paperwork I didn't even know I needed. Saved me weeks.",
+      author: "Maria K.",
+      role: "Founder, Bloom Studio",
     },
     {
       quote:
-        "The health scoring dashboard replaced three tools we were stitching together. Simpler and more accurate.",
+        "The daily briefing alone is worth the price. It's like having a COO in my pocket.",
       author: "James T.",
-      role: "Head of Revenue Ops",
+      role: "CEO, NorthPeak Consulting",
     },
     {
       quote:
-        "We reduced our churn rate by 40% in the first quarter. The ROI was immediate.",
-      author: "Priya M.",
-      role: "CEO",
+        "We went from idea to first revenue in 3 weeks with SaaSy guiding every step.",
+      author: "Priya S.",
+      role: "Co-founder, DataLens",
     },
   ];
 
@@ -709,7 +709,7 @@ const FAQ_ITEMS = [
   {
     question: "Is my data secure?",
     answer:
-      "Absolutely. We use enterprise-grade encryption (AES-256 at rest, TLS 1.2+ in transit), SOC 2 compliance, and strict tenant isolation. Your customer data is never shared across accounts.",
+      "Absolutely. We use enterprise-grade encryption (AES-256 at rest, TLS 1.2+ in transit), SOC 2 compliance, and strict tenant isolation. Your business data is never shared across accounts.",
   },
   {
     question: "What integrations do you support?",
@@ -719,7 +719,7 @@ const FAQ_ITEMS = [
   {
     question: "How long does setup take?",
     answer:
-      "Most teams are up and running in under 5 minutes. Connect your data sources, and SaaSy starts scoring customer health immediately.",
+      "Most entrepreneurs are up and running in under 2 minutes. Answer a few questions about your business, and SaaSy builds your personalized action plan immediately.",
   },
   {
     question: "Can I cancel anytime?",
@@ -1123,21 +1123,21 @@ function MarketingFooter() {
 
 const BLOG_POSTS = [
   {
-    title: "How to Build a Customer Health Score That Actually Works",
+    title: "The Complete Guide to LLC Formation in 2026",
     description:
-      "Learn the framework SaaS teams use to combine usage data, support signals, and engagement metrics into a single actionable score.",
+      "Everything you need to know about registering your business entity, from state selection to EIN filing.",
     href: "https://saasysolutionsllc.com/blog",
   },
   {
-    title: "5 Early Warning Signs of Customer Churn",
+    title: "5 Compliance Mistakes That Cost New Businesses Thousands",
     description:
-      "The signals most teams miss — and how to catch them before renewal conversations start.",
+      "The permits, licenses, and filings most first-time founders miss — and how to stay ahead.",
     href: "https://saasysolutionsllc.com/blog",
   },
   {
-    title: "Why Reactive Customer Success Is Costing You Revenue",
+    title: "How AI Is Changing the Way Entrepreneurs Launch Businesses",
     description:
-      "The data behind proactive vs reactive CS strategies, and how to make the shift.",
+      "From automated compliance to intelligent CRM, the tools reshaping business formation.",
     href: "https://saasysolutionsllc.com/blog",
   },
 ];
@@ -1157,7 +1157,7 @@ function BlogHighlights() {
             className="mt-4 font-[family-name:var(--font-dm-sans)]
               text-lg text-saasy-muted"
           >
-            Insights and frameworks for customer success teams.
+            Insights and guides for entrepreneurs.
           </p>
         </div>
 
@@ -1300,9 +1300,9 @@ export default function Home() {
               text-5xl leading-[1.1] font-extrabold tracking-tight
               text-white sm:text-7xl"
           >
-            Stop churn
+            Your AI business
             <br />
-            <span className="gradient-text">before it starts</span>
+            <span className="gradient-text">co-founder</span>
           </h1>
 
           <p
@@ -1310,9 +1310,9 @@ export default function Home() {
               font-[family-name:var(--font-dm-sans)] text-lg
               leading-relaxed text-saasy-muted sm:text-xl"
           >
-            AI-powered customer health scoring and churn prediction
-            for SaaS teams. Know which customers need attention
-            before they leave.
+            SaaSy guides you from first idea to thriving
+            enterprise. Every stage of your business journey,
+            managed by AI that works alongside you.
           </p>
 
           {/* CTAs */}
@@ -1328,7 +1328,7 @@ export default function Home() {
                 font-semibold text-saasy-dark transition-colors
                 hover:bg-saasy-teal-dim"
             >
-              Start your free trial
+              Start Free Trial
             </Link>
             <Link
               href="#features"
@@ -1354,6 +1354,15 @@ export default function Home() {
               </svg>
             </Link>
           </div>
+
+          <p
+            className="mt-4
+              font-[family-name:var(--font-dm-sans)]
+              text-sm text-saasy-muted"
+          >
+            14-day free trial on Growth plan. No credit card
+            required.
+          </p>
 
           {/* Abstract dashboard */}
           <DashboardGraphic />
@@ -1389,9 +1398,9 @@ export default function Home() {
               className="font-[family-name:var(--font-sora)]
                 text-3xl font-bold text-white sm:text-4xl"
             >
-              Everything you need to{" "}
+              Everything your business needs to{" "}
               <span className="gradient-text">
-                retain customers
+                thrive
               </span>
             </h2>
             <p
@@ -1399,9 +1408,9 @@ export default function Home() {
                 font-[family-name:var(--font-dm-sans)]
                 text-lg text-saasy-muted"
             >
-              From real-time health scoring to predictive
-              analytics, SaaSy gives your team the tools to act
-              before customers churn.
+              From formation to scaling, SaaSy manages every
+              stage of your business lifecycle with AI-powered
+              guidance.
             </p>
           </div>
 
@@ -1409,24 +1418,24 @@ export default function Home() {
             className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4"
           >
             <FeatureCard
-              icon={<IconHealthScore />}
-              title="Health Scoring"
-              description="Real-time customer health scores powered by usage data, support interactions, and engagement signals."
+              icon={<IconCompliance />}
+              title="Compliance Tracker"
+              description="Automated tracking of licenses, permits, and filings. Get reminders before deadlines, not after."
             />
             <FeatureCard
-              icon={<IconChurn />}
-              title="Churn Prediction"
-              description="ML-driven churn risk assessment identifies at-risk customers weeks before they cancel."
+              icon={<IconCRM />}
+              title="Built-in CRM"
+              description="Manage contacts, deals, and customer relationships from day one. No separate tool needed."
+            />
+            <FeatureCard
+              icon={<IconAI />}
+              title="AI Guidance"
+              description="Personalized recommendations for your business at every growth stage. Like having a mentor on call."
             />
             <FeatureCard
               icon={<IconAlerts />}
               title="Proactive Alerts"
-              description="Automated alerts when customer health drops, so your team can intervene early."
-            />
-            <FeatureCard
-              icon={<IconIntegrations />}
-              title="Native Integrations"
-              description="Connect Salesforce, HubSpot, Stripe, and Jira to build a complete customer picture."
+              description="Timely notifications about deadlines, opportunities, and risks via email or Slack."
             />
           </div>
         </div>
@@ -1474,11 +1483,11 @@ export default function Home() {
               price={prices.starter}
               billingLabel={billingLabel}
               features={[
-                "Up to 100 customers",
-                "1 integration",
-                "3 team members",
+                "1 business",
+                "Compliance tracker",
+                "CRM (50 contacts)",
+                "Daily briefing",
                 "Email alerts",
-                "Health scoring dashboard",
               ]}
             />
             <PricingCard
@@ -1487,10 +1496,10 @@ export default function Home() {
               popular
               billingLabel={billingLabel}
               features={[
-                "Up to 1,000 customers",
-                "5 integrations",
-                "10 team members",
-                "Email + Slack alerts",
+                "Up to 5 businesses",
+                "All modules",
+                "AI guidance",
+                "Slack alerts",
                 "API access",
                 "Advanced analytics",
               ]}
@@ -1500,12 +1509,12 @@ export default function Home() {
               price={prices.scale}
               billingLabel={billingLabel}
               features={[
-                "Unlimited customers",
+                "Unlimited businesses",
                 "Unlimited integrations",
-                "50 team members",
                 "Priority support",
-                "Custom alert rules",
-                "Dedicated CSM",
+                "Custom automations",
+                "Dedicated onboarding",
+                "Advanced analytics",
               ]}
             />
           </div>
@@ -1528,15 +1537,16 @@ export default function Home() {
             className="font-[family-name:var(--font-sora)]
               text-3xl font-bold text-white sm:text-5xl"
           >
-            Ready to reduce churn?
+            Ready to run your business smarter?
           </h2>
           <p
             className="mx-auto mt-4 max-w-xl
               font-[family-name:var(--font-dm-sans)] text-lg
               text-saasy-muted"
           >
-            Join SaaS teams using SaaSy to predict and prevent
-            customer churn. Start your 14-day free trial today.
+            Join thousands of entrepreneurs using SaaSy to build
+            and grow their businesses. Start your 14-day free
+            trial today.
           </p>
           <Link
             href="https://app.hellosaasy.ai/auth/register"
