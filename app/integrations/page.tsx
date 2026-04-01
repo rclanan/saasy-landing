@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { SiteNav } from '../components/SiteNav';
+import { MarketingFooter } from '../components/MarketingFooter';
 
 export const metadata: Metadata = {
   title: 'Integrations | SaaSy',
@@ -62,25 +64,9 @@ const integrations: Integration[] = [
 export default function IntegrationsPage() {
   return (
     <div className="bg-saasy-dark min-h-screen">
-      {/* Nav */}
-      <nav className="border-b border-saasy-border/50 bg-saasy-dark/80 backdrop-blur-lg">
-        <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
-          <Link
-            href="/"
-            className="font-[family-name:var(--font-sora)] text-xl font-bold"
-          >
-            <span className="gradient-text">SaaSy</span>
-          </Link>
-          <Link
-            href="/"
-            className="font-[family-name:var(--font-dm-sans)] text-sm text-saasy-teal hover:text-saasy-teal-dim underline"
-          >
-            &larr; Back to home
-          </Link>
-        </div>
-      </nav>
+      <SiteNav />
 
-      <div className="max-w-5xl mx-auto px-6 py-16">
+      <div className="max-w-5xl mx-auto px-6 pt-28 pb-16">
         {/* Hero */}
         <header className="mb-14 text-center">
           <h1 className="font-[family-name:var(--font-sora)] text-4xl font-bold text-white">
@@ -141,27 +127,8 @@ export default function IntegrationsPage() {
           </a>
         </div>
 
-        {/* Footer */}
-        <footer className="mt-16 border-t border-saasy-border pt-8">
-          <p className="font-[family-name:var(--font-dm-sans)] text-sm text-saasy-muted">
-            &copy; 2026 SaaSy Solutions LLC. All rights reserved.
-          </p>
-          <div className="mt-3 flex gap-6">
-            <Link
-              href="/terms"
-              className="font-[family-name:var(--font-dm-sans)] text-sm text-saasy-teal hover:text-saasy-teal-dim underline"
-            >
-              Terms of Service
-            </Link>
-            <Link
-              href="/privacy"
-              className="font-[family-name:var(--font-dm-sans)] text-sm text-saasy-teal hover:text-saasy-teal-dim underline"
-            >
-              Privacy Policy
-            </Link>
-          </div>
-        </footer>
       </div>
+      <MarketingFooter />
     </div>
   );
 }

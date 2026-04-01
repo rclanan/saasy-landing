@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { SubpageNav } from "../components/SubpageNav";
+import { SiteNav } from "../components/SiteNav";
+import { MarketingFooter } from "../components/MarketingFooter";
 
 export const metadata: Metadata = {
   title: "Customers — SaaSy",
@@ -60,7 +61,7 @@ const CASE_STUDIES: CaseStudy[] = [
 export default function CustomersPage() {
   return (
     <div className="min-h-screen">
-      <SubpageNav />
+      <SiteNav />
       <div className="mx-auto max-w-6xl px-6 pt-28 pb-20">
         <div className="text-center">
           <p
@@ -158,6 +159,7 @@ export default function CustomersPage() {
           </div>
         </div>
       </div>
+      <MarketingFooter />
     </div>
   );
 }

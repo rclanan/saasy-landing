@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { SubpageNav } from "../components/SubpageNav";
+import { SiteNav } from "../components/SiteNav";
+import { MarketingFooter } from "../components/MarketingFooter";
 
 export const metadata: Metadata = {
   title: "Changelog — SaaSy",
@@ -112,7 +113,7 @@ const TYPE_STYLES: Record<
 export default function ChangelogPage() {
   return (
     <div className="min-h-screen">
-      <SubpageNav />
+      <SiteNav />
       <div className="mx-auto max-w-3xl px-6 pt-28 pb-20">
         <h1
           className="font-[family-name:var(--font-sora)]
@@ -184,6 +185,7 @@ export default function ChangelogPage() {
           ))}
         </div>
       </div>
+      <MarketingFooter />
     </div>
   );
 }

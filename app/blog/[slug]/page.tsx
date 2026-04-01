@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { SubpageNav } from "../../components/SubpageNav";
+import { SiteNav } from "../../components/SiteNav";
+import { MarketingFooter } from "../../components/MarketingFooter";
 
 const SLUGS = [
   "reduce-churn-with-health-scoring",
@@ -23,7 +24,7 @@ export default async function BlogPostPage({
 
   return (
     <div className="min-h-screen">
-      <SubpageNav />
+      <SiteNav />
       <div className="mx-auto max-w-3xl px-6 pt-28 pb-20">
         <Link
           href="/blog"
@@ -72,6 +73,7 @@ export default async function BlogPostPage({
           </div>
         </article>
       </div>
+      <MarketingFooter />
     </div>
   );
 }

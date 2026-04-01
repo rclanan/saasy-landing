@@ -13,7 +13,7 @@ import { FAQ } from "./components/FAQ";
 import { BlogHighlights } from "./components/BlogHighlights";
 import { EmailCapture } from "./components/EmailCapture";
 import { MarketingFooter } from "./components/MarketingFooter";
-import { MobileNav } from "./components/MobileNav";
+import { SiteNav } from "./components/SiteNav";
 import { Hero } from "./components/Hero";
 
 /* ═══════════════════════════ PAGE ═══════════════════════════════ */
@@ -33,52 +33,7 @@ export default function Home(): React.ReactElement {
   return (
     <div className="min-h-screen">
       {/* ─────────────── Navigation ─────────────── */}
-      <nav
-        className="fixed top-0 right-0 left-0 z-50
-          border-b border-saasy-border/50 bg-saasy-dark/80
-          backdrop-blur-lg"
-      >
-        <div
-          className="mx-auto flex max-w-6xl items-center
-            justify-between px-6 py-4"
-        >
-          <Link
-            href="/"
-            className="font-[family-name:var(--font-sora)]
-              text-xl font-bold text-white"
-          >
-            <span className="gradient-text">SaaSy</span>
-          </Link>
-          <div className="flex items-center gap-6">
-            <Link
-              href="#features"
-              className="hidden font-[family-name:var(--font-dm-sans)]
-                text-sm text-saasy-muted transition-colors
-                hover:text-white md:block"
-            >
-              Features
-            </Link>
-            <Link
-              href="#pricing"
-              className="hidden font-[family-name:var(--font-dm-sans)]
-                text-sm text-saasy-muted transition-colors
-                hover:text-white md:block"
-            >
-              Pricing
-            </Link>
-            <Link
-              href="https://app.hellosaasy.ai/auth/register"
-              className="hidden rounded-lg bg-saasy-teal px-4 py-2
-                font-[family-name:var(--font-sora)] text-sm
-                font-semibold text-saasy-dark transition-colors
-                hover:bg-saasy-teal-dim md:flex"
-            >
-              Start free trial
-            </Link>
-            <MobileNav />
-          </div>
-        </div>
-      </nav>
+      <SiteNav />
 
       {/* ─────────────────── Hero ─────────────────── */}
       <Hero />

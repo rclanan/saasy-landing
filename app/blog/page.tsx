@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { SubpageNav } from "../components/SubpageNav";
+import { SiteNav } from "../components/SiteNav";
+import { MarketingFooter } from "../components/MarketingFooter";
 
 export const metadata: Metadata = {
   title: "Blog — SaaSy",
@@ -53,7 +54,7 @@ const POSTS: BlogPost[] = [
 export default function BlogPage() {
   return (
     <div className="min-h-screen">
-      <SubpageNav />
+      <SiteNav />
       <div className="mx-auto max-w-4xl px-6 pt-28 pb-20">
         <h1
           className="font-[family-name:var(--font-sora)]
@@ -124,6 +125,7 @@ export default function BlogPage() {
           ))}
         </div>
       </div>
+      <MarketingFooter />
     </div>
   );
 }
