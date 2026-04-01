@@ -37,8 +37,10 @@ export function SiteNav(): React.ReactElement {
 
   /** Check if a nav link is active. */
   const isActive = (href: string): boolean => {
+    // Anchor links (/#features, /#pricing) are section jumps, not pages —
+    // never highlight them as "active"
     if (href.startsWith("/#")) {
-      return pathname === "/";
+      return false;
     }
     return pathname === href || pathname.startsWith(href + "/");
   };
