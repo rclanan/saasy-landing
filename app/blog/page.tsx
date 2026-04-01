@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { SiteNav } from "../components/SiteNav";
 import { MarketingFooter } from "../components/MarketingFooter";
+import { POSTS } from "./content";
 
 export const metadata: Metadata = {
   title: "Blog — SaaSy",
@@ -9,47 +10,6 @@ export const metadata: Metadata = {
     "Insights on customer success, churn reduction, " +
     "and growing your SaaS business.",
 };
-
-interface BlogPost {
-  slug: string;
-  title: string;
-  excerpt: string;
-  date: string;
-  readTime: string;
-}
-
-const POSTS: BlogPost[] = [
-  {
-    slug: "reduce-churn-with-health-scoring",
-    title:
-      "How Health Scoring Reduced Our Churn by 30%",
-    excerpt:
-      "Learn how proactive health monitoring helps " +
-      "you catch at-risk accounts before they leave.",
-    date: "2026-03-15",
-    readTime: "5 min read",
-  },
-  {
-    slug: "onboarding-checklist-for-smb-saas",
-    title:
-      "The Ultimate Onboarding Checklist for SMB SaaS",
-    excerpt:
-      "A step-by-step guide to getting new customers " +
-      "to their first aha moment faster.",
-    date: "2026-03-08",
-    readTime: "7 min read",
-  },
-  {
-    slug: "ai-powered-customer-success",
-    title:
-      "AI-Powered Customer Success: What Actually Works",
-    excerpt:
-      "Cutting through the hype to find AI " +
-      "applications that genuinely move the needle.",
-    date: "2026-02-28",
-    readTime: "6 min read",
-  },
-];
 
 export default function BlogPage() {
   return (

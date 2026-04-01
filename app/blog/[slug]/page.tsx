@@ -1,15 +1,30 @@
 import Link from "next/link";
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import { SiteNav } from "../../components/SiteNav";
 import { MarketingFooter } from "../../components/MarketingFooter";
+import { POSTS } from "../content";
 
-const SLUGS = [
-  "reduce-churn-with-health-scoring",
-  "onboarding-checklist-for-smb-saas",
-  "ai-powered-customer-success",
-];
+export function generateStaticParams(): {
+  slug: string;
+}[] {
+  return POSTS.map(post => ({ slug: post.slug }));
+}
 
-export function generateStaticParams() {
-  return SLUGS.map(slug => ({ slug }));
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const post = POSTS.find(p => p.slug === slug);
+  if (!post) {
+    return { title: "Post Not Found — SaaSy" };
+  }
+  return {
+    title: `${post.title} — SaaSy Blog`,
+    description: post.excerpt,
+  };
 }
 
 export default async function BlogPostPage({
@@ -18,9 +33,20 @@ export default async function BlogPostPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const title = slug
-    .replace(/-/g, " ")
-    .replace(/\b\w/g, c => c.toUpperCase());
+  const postIndex = POSTS.findIndex(
+    p => p.slug === slug,
+  );
+  if (postIndex === -1) {
+    notFound();
+  }
+
+  const post = POSTS[postIndex];
+  const prevPost =
+    postIndex > 0 ? POSTS[postIndex - 1] : null;
+  const nextPost =
+    postIndex < POSTS.length - 1
+      ? POSTS[postIndex + 1]
+      : null;
 
   return (
     <div className="min-h-screen">
@@ -39,39 +65,112 @@ export default async function BlogPostPage({
             className="font-[family-name:var(--font-sora)]
               text-3xl font-bold tracking-tight text-white"
           >
-            {title}
+            {post.title}
           </h1>
           <div
             className="mt-4 flex items-center gap-3
               font-[family-name:var(--font-dm-sans)]
               text-sm text-saasy-muted"
           >
-            <span>SaaSy Team</span>
+            <span>{post.author}</span>
             <span>&middot;</span>
-            <span>5 min read</span>
+            <time dateTime={post.date}>
+              {new Date(post.date).toLocaleDateString(
+                "en-US",
+                {
+                  year: "numeric",
+                  month: "long",
+                  day: "numeric",
+                },
+              )}
+            </time>
+            <span>&middot;</span>
+            <span>{post.readTime}</span>
           </div>
+
           <div
-            className="mt-8 font-[family-name:var(--font-dm-sans)]
-              text-saasy-text leading-relaxed space-y-4"
+            className="mt-10
+              font-[family-name:var(--font-dm-sans)]
+              text-saasy-text leading-relaxed"
           >
-            <p>
-              This post is coming soon. Check back for
-              insights on customer success and SaaS
-              growth strategies.
-            </p>
-            <p>
-              In the meantime,{" "}
+            {post.sections.map((section, i) => (
+              <section key={i} className="mb-10">
+                <h2
+                  className="font-[family-name:var(--font-sora)]
+                    text-2xl font-bold text-white mb-4"
+                >
+                  {section.heading}
+                </h2>
+                <div className="space-y-4">
+                  {section.body
+                    .split("\n\n")
+                    .map((paragraph, j) => (
+                      <p key={j}>{paragraph}</p>
+                    ))}
+                </div>
+              </section>
+            ))}
+          </div>
+
+          {post.cta && (
+            <div
+              className="mt-12 rounded-xl border
+                border-saasy-teal/20 bg-saasy-card p-8
+                text-center"
+            >
+              <p
+                className="font-[family-name:var(--font-dm-sans)]
+                  text-lg text-saasy-text mb-6"
+              >
+                {post.cta}
+              </p>
               <Link
                 href="https://app.hellosaasy.ai/signup"
-                className="text-saasy-teal hover:text-saasy-teal-dim
+                className="inline-block rounded-lg
+                  bg-saasy-teal px-6 py-3
+                  font-[family-name:var(--font-dm-sans)]
+                  text-sm font-semibold text-black
+                  hover:bg-saasy-teal-dim
                   transition-colors"
               >
-                start your free trial
-              </Link>{" "}
-              to experience SaaSy firsthand.
-            </p>
-          </div>
+                Start Free Trial
+              </Link>
+            </div>
+          )}
         </article>
+
+        <nav
+          className="mt-12 flex items-center
+            justify-between border-t border-saasy-border
+            pt-8"
+        >
+          <div>
+            {prevPost && (
+              <Link
+                href={`/blog/${prevPost.slug}`}
+                className="font-[family-name:var(--font-dm-sans)]
+                  text-sm text-saasy-teal
+                  hover:text-saasy-teal-dim
+                  transition-colors"
+              >
+                &larr; {prevPost.title}
+              </Link>
+            )}
+          </div>
+          <div>
+            {nextPost && (
+              <Link
+                href={`/blog/${nextPost.slug}`}
+                className="font-[family-name:var(--font-dm-sans)]
+                  text-sm text-saasy-teal
+                  hover:text-saasy-teal-dim
+                  transition-colors text-right"
+              >
+                {nextPost.title} &rarr;
+              </Link>
+            )}
+          </div>
+        </nav>
       </div>
       <MarketingFooter />
     </div>

@@ -1,21 +1,29 @@
+import Link from "next/link";
+
 const BLOG_POSTS = [
   {
-    title: "The Complete Guide to LLC Formation in 2026",
+    title: "How Health Scoring Reduced Our Churn by 30%",
     description:
-      "Everything you need to know about registering your business entity, from state selection to EIN filing.",
-    href: "https://saasysolutionsllc.com/blog/complete-guide-llc-formation-2026",
+      "Learn how proactive health monitoring helps " +
+      "you catch at-risk accounts before they leave.",
+    href: "/blog/reduce-churn-with-health-scoring",
   },
   {
-    title: "5 Compliance Mistakes That Cost New Businesses Thousands",
+    title:
+      "The Ultimate Onboarding Checklist for SMB SaaS",
     description:
-      "The permits, licenses, and filings most first-time founders miss — and how to stay ahead.",
-    href: "https://saasysolutionsllc.com/blog/compliance-mistakes-new-businesses",
+      "A step-by-step guide to getting new customers " +
+      "to their first aha moment faster.",
+    href: "/blog/onboarding-checklist-for-smb-saas",
   },
   {
-    title: "How AI Is Changing the Way Entrepreneurs Launch Businesses",
+    title:
+      "AI-Powered Customer Success: " +
+      "What Actually Works",
     description:
-      "From automated compliance to intelligent CRM, the tools reshaping business formation.",
-    href: "https://saasysolutionsllc.com/blog/ai-changing-how-entrepreneurs-launch",
+      "Cutting through the hype to find AI " +
+      "applications that genuinely move the needle.",
+    href: "/blog/ai-powered-customer-success",
   },
 ];
 
@@ -34,13 +42,14 @@ export function BlogHighlights(): React.ReactElement {
             className="mt-4 font-[family-name:var(--font-dm-sans)]
               text-lg text-saasy-muted"
           >
-            Insights and guides for entrepreneurs.
+            Insights on customer success, churn
+            reduction, and growing your SaaS business.
           </p>
         </div>
 
         <div className="grid gap-6 md:grid-cols-3">
           {BLOG_POSTS.map((post) => (
-            <a
+            <Link
               key={post.title}
               href={post.href}
               className="rounded-2xl border border-saasy-border
@@ -64,21 +73,21 @@ export function BlogHighlights(): React.ReactElement {
                 className="text-saasy-teal text-sm font-medium
                   mt-4 inline-block"
               >
-                Read more →
+                Read more &rarr;
               </span>
-            </a>
+            </Link>
           ))}
         </div>
 
         <div className="mt-10 text-center">
-          <a
-            href="https://saasysolutionsllc.com/blog"
+          <Link
+            href="/blog"
             className="font-[family-name:var(--font-dm-sans)]
               text-saasy-teal text-sm font-medium
               hover:underline transition-colors"
           >
-            View all posts →
-          </a>
+            View all posts &rarr;
+          </Link>
         </div>
       </div>
     </section>
