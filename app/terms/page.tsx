@@ -351,7 +351,7 @@ export default function TermsOfServicePage() {
         {/* Footer */}
         <footer className="mt-16 border-t border-saasy-border pt-8">
           <p className="font-[family-name:var(--font-poppins)] text-sm text-saasy-muted">
-            &copy; 2026 SaaSy Solutions LLC. All rights reserved.
+            &copy; 2023–2026 SaaSy Solutions LLC. All rights reserved.
           </p>
           <div className="mt-3 flex gap-6">
             <Link

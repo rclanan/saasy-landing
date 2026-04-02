@@ -147,7 +147,7 @@ export function MarketingFooter(): React.ReactElement {
             text-center text-saasy-muted text-sm
             font-[family-name:var(--font-poppins)]"
         >
-          &copy; 2026 SaaSy. A product by{" "}
+          &copy; 2023–2026 SaaSy. A product by{" "}
           <a
             href="https://saasysolutionsllc.com"
             className="hover:text-white transition-colors"
