@@ -13,6 +13,7 @@ import { FAQ } from "./components/FAQ";
 import { BlogHighlights } from "./components/BlogHighlights";
 import { EmailCapture } from "./components/EmailCapture";
 import { MarketingFooter } from "./components/MarketingFooter";
+import { ConsultingPromo } from "./components/ConsultingPromo";
 import { SiteNav } from "./components/SiteNav";
 import { Hero } from "./components/Hero";
 
@@ -198,6 +199,9 @@ export default function Home(): React.ReactElement {
 
       {/* ─────────────── Email Capture ────────────── */}
       <EmailCapture />
+
+      {/* ──────── Consulting Cross-Promo ─────────── */}
+      <ConsultingPromo />
 
       {/* ───────────── Final CTA ──────────────────── */}
       <section className="border-t border-saasy-border">
