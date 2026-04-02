@@ -25,7 +25,7 @@ export function WhoItsFor(): React.ReactElement {
       <div className="mx-auto max-w-6xl px-6">
         <div className="mx-auto mb-16 max-w-2xl text-center">
           <h2
-            className="font-[family-name:var(--font-sora)]
+            className="font-[family-name:var(--font-poppins)]
               text-3xl font-bold text-white sm:text-4xl"
           >
             Built for every entrepreneur who{" "}
@@ -41,22 +41,22 @@ export function WhoItsFor(): React.ReactElement {
                 bg-saasy-card/50 p-8"
             >
               <h3
-                className="mb-3 font-[family-name:var(--font-sora)]
+                className="mb-3 font-[family-name:var(--font-poppins)]
                   text-xl font-semibold text-white"
               >
                 {persona.title}
               </h3>
               <p
-                className="font-[family-name:var(--font-dm-sans)]
+                className="font-[family-name:var(--font-poppins)]
                   leading-relaxed text-saasy-muted"
               >
                 {persona.description}
               </p>
               <div
-                className="mt-4 rounded-lg bg-saasy-teal/10
-                  border border-saasy-teal/20 p-3 text-sm
-                  font-medium text-saasy-teal
-                  font-[family-name:var(--font-dm-sans)]"
+                className="mt-4 rounded-lg bg-saasy-pink/10
+                  border border-saasy-pink/20 p-3 text-sm
+                  font-medium text-saasy-pink
+                  font-[family-name:var(--font-poppins)]"
               >
                 {persona.benefit}
               </div>

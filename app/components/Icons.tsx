@@ -12,18 +12,18 @@ export function IconCompliance(): React.ReactElement {
         width="40"
         height="40"
         rx="12"
-        className="fill-saasy-teal/10 stroke-saasy-teal"
+        className="fill-saasy-pink/10 stroke-saasy-pink"
         strokeWidth="1.5"
       />
       <path
         d="M14 30l6-8 5 5 9-13"
-        className="stroke-saasy-teal"
+        className="stroke-saasy-pink"
         strokeWidth="2.5"
         strokeLinecap="round"
         strokeLinejoin="round"
         fill="none"
       />
-      <circle cx="35" cy="14" r="3" className="fill-saasy-teal" />
+      <circle cx="35" cy="14" r="3" className="fill-saasy-pink" />
     </svg>
   );
 }
@@ -42,18 +42,18 @@ export function IconCRM(): React.ReactElement {
         width="40"
         height="40"
         rx="12"
-        className="fill-saasy-cyan/10 stroke-saasy-cyan"
+        className="fill-saasy-orange/10 stroke-saasy-orange"
         strokeWidth="1.5"
       />
       <path
         d="M15 33V26M21 33V22M27 33V18M33 33V14"
-        className="stroke-saasy-cyan"
+        className="stroke-saasy-orange"
         strokeWidth="2.5"
         strokeLinecap="round"
       />
       <path
         d="M15 18l6-2 6-2 6-2"
-        className="stroke-saasy-cyan/50"
+        className="stroke-saasy-orange/50"
         strokeWidth="1.5"
         strokeLinecap="round"
         strokeDasharray="3 3"
@@ -76,12 +76,12 @@ export function IconAI(): React.ReactElement {
         width="40"
         height="40"
         rx="12"
-        className="fill-saasy-purple/10 stroke-saasy-purple"
+        className="fill-saasy-rose/10 stroke-saasy-rose"
         strokeWidth="1.5"
       />
       <path
         d="M24 14v10l5 5"
-        className="stroke-saasy-purple"
+        className="stroke-saasy-rose"
         strokeWidth="2.5"
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -90,11 +90,11 @@ export function IconAI(): React.ReactElement {
         cx="24"
         cy="24"
         r="10"
-        className="stroke-saasy-purple"
+        className="stroke-saasy-rose"
         strokeWidth="1.5"
         fill="none"
       />
-      <circle cx="34" cy="14" r="4" className="fill-saasy-popular" />
+      <circle cx="34" cy="14" r="4" className="fill-saasy-orange" />
     </svg>
   );
 }
@@ -113,20 +113,20 @@ export function IconAlerts(): React.ReactElement {
         width="40"
         height="40"
         rx="12"
-        className="fill-saasy-teal/10 stroke-saasy-teal"
+        className="fill-saasy-pink/10 stroke-saasy-pink"
         strokeWidth="1.5"
       />
       <circle
         cx="24"
         cy="24"
         r="4"
-        className="fill-saasy-teal"
+        className="fill-saasy-pink"
       />
       <circle
         cx="14"
         cy="14"
         r="3"
-        className="stroke-saasy-cyan"
+        className="stroke-saasy-orange"
         strokeWidth="1.5"
         fill="none"
       />
@@ -134,7 +134,7 @@ export function IconAlerts(): React.ReactElement {
         cx="34"
         cy="14"
         r="3"
-        className="stroke-saasy-cyan"
+        className="stroke-saasy-orange"
         strokeWidth="1.5"
         fill="none"
       />
@@ -142,7 +142,7 @@ export function IconAlerts(): React.ReactElement {
         cx="14"
         cy="34"
         r="3"
-        className="stroke-saasy-cyan"
+        className="stroke-saasy-orange"
         strokeWidth="1.5"
         fill="none"
       />
@@ -150,7 +150,7 @@ export function IconAlerts(): React.ReactElement {
         cx="34"
         cy="34"
         r="3"
-        className="stroke-saasy-cyan"
+        className="stroke-saasy-orange"
         strokeWidth="1.5"
         fill="none"
       />
@@ -159,7 +159,7 @@ export function IconAlerts(): React.ReactElement {
         y1="17"
         x2="21"
         y2="21"
-        className="stroke-saasy-teal/50"
+        className="stroke-saasy-pink/50"
         strokeWidth="1.5"
       />
       <line
@@ -167,7 +167,7 @@ export function IconAlerts(): React.ReactElement {
         y1="17"
         x2="27"
         y2="21"
-        className="stroke-saasy-teal/50"
+        className="stroke-saasy-pink/50"
         strokeWidth="1.5"
       />
       <line
@@ -175,7 +175,7 @@ export function IconAlerts(): React.ReactElement {
         y1="31"
         x2="21"
         y2="27"
-        className="stroke-saasy-teal/50"
+        className="stroke-saasy-pink/50"
         strokeWidth="1.5"
       />
       <line
@@ -183,7 +183,7 @@ export function IconAlerts(): React.ReactElement {
         y1="31"
         x2="27"
         y2="27"
-        className="stroke-saasy-teal/50"
+        className="stroke-saasy-pink/50"
         strokeWidth="1.5"
       />
     </svg>
@@ -195,7 +195,7 @@ export function IconCheck(): React.ReactElement {
     <svg
       viewBox="0 0 20 20"
       fill="currentColor"
-      className="h-5 w-5 shrink-0 text-saasy-teal"
+      className="h-5 w-5 shrink-0 text-saasy-pink"
       aria-hidden="true"
     >
       <path

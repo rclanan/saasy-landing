@@ -33,13 +33,13 @@ export function BlogHighlights(): React.ReactElement {
       <div className="mx-auto max-w-6xl px-6">
         <div className="mx-auto mb-12 max-w-2xl text-center">
           <h2
-            className="font-[family-name:var(--font-sora)]
+            className="font-[family-name:var(--font-poppins)]
               text-3xl font-bold text-white sm:text-4xl"
           >
             From our blog
           </h2>
           <p
-            className="mt-4 font-[family-name:var(--font-dm-sans)]
+            className="mt-4 font-[family-name:var(--font-poppins)]
               text-lg text-saasy-muted"
           >
             Insights on customer success, churn
@@ -53,24 +53,24 @@ export function BlogHighlights(): React.ReactElement {
               key={post.title}
               href={post.href}
               className="rounded-2xl border border-saasy-border
-                bg-saasy-card/50 p-6 hover:border-saasy-teal/30
+                bg-saasy-card/50 p-6 hover:border-saasy-pink/30
                 transition-all duration-300 group block"
             >
               <h3
-                className="text-white font-[family-name:var(--font-sora)]
-                  text-lg font-semibold group-hover:text-saasy-teal
+                className="text-white font-[family-name:var(--font-poppins)]
+                  text-lg font-semibold group-hover:text-saasy-pink
                   transition-colors"
               >
                 {post.title}
               </h3>
               <p
-                className="text-saasy-muted font-[family-name:var(--font-dm-sans)]
+                className="text-saasy-muted font-[family-name:var(--font-poppins)]
                   text-sm mt-2"
               >
                 {post.description}
               </p>
               <span
-                className="text-saasy-teal text-sm font-medium
+                className="text-saasy-pink text-sm font-medium
                   mt-4 inline-block"
               >
                 Read more &rarr;
@@ -82,8 +82,8 @@ export function BlogHighlights(): React.ReactElement {
         <div className="mt-10 text-center">
           <Link
             href="/blog"
-            className="font-[family-name:var(--font-dm-sans)]
-              text-saasy-teal text-sm font-medium
+            className="font-[family-name:var(--font-poppins)]
+              text-saasy-pink text-sm font-medium
               hover:underline transition-colors"
           >
             View all posts &rarr;

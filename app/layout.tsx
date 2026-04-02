@@ -1,19 +1,12 @@
 import type { Metadata } from "next";
-import { Sora, DM_Sans } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 
-const sora = Sora({
+const poppins = Poppins({
   subsets: ["latin"],
-  variable: "--font-sora",
+  variable: "--font-poppins",
   display: "swap",
-  weight: ["400", "500", "600", "700", "800"],
-});
-
-const dmSans = DM_Sans({
-  subsets: ["latin"],
-  variable: "--font-dm-sans",
-  display: "swap",
-  weight: ["400", "500", "600"],
+  weight: ["400", "500", "600", "800", "900"],
 });
 
 export const metadata: Metadata = {
@@ -79,7 +72,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body
-        className={`${sora.variable} ${dmSans.variable} antialiased`}
+        className={`${poppins.variable} antialiased`}
       >
         <script
           type="application/ld+json"

@@ -11,7 +11,7 @@ export function MarketingFooter(): React.ReactElement {
           {/* Product column */}
           <div>
             <h4
-              className="text-white font-[family-name:var(--font-sora)]
+              className="text-white font-[family-name:var(--font-poppins)]
                 text-sm font-semibold mb-4"
             >
               Product
@@ -20,7 +20,7 @@ export function MarketingFooter(): React.ReactElement {
               <li>
                 <Link
                   href="#features"
-                  className="text-saasy-muted font-[family-name:var(--font-dm-sans)]
+                  className="text-saasy-muted font-[family-name:var(--font-poppins)]
                     text-sm hover:text-white transition-colors"
                 >
                   Features
@@ -29,7 +29,7 @@ export function MarketingFooter(): React.ReactElement {
               <li>
                 <Link
                   href="#pricing"
-                  className="text-saasy-muted font-[family-name:var(--font-dm-sans)]
+                  className="text-saasy-muted font-[family-name:var(--font-poppins)]
                     text-sm hover:text-white transition-colors"
                 >
                   Pricing
@@ -38,7 +38,7 @@ export function MarketingFooter(): React.ReactElement {
               <li>
                 <Link
                   href="/integrations"
-                  className="text-saasy-muted font-[family-name:var(--font-dm-sans)]
+                  className="text-saasy-muted font-[family-name:var(--font-poppins)]
                     text-sm hover:text-white transition-colors"
                 >
                   Integrations
@@ -50,7 +50,7 @@ export function MarketingFooter(): React.ReactElement {
           {/* Company column */}
           <div>
             <h4
-              className="text-white font-[family-name:var(--font-sora)]
+              className="text-white font-[family-name:var(--font-poppins)]
                 text-sm font-semibold mb-4"
             >
               Company
@@ -59,7 +59,7 @@ export function MarketingFooter(): React.ReactElement {
               <li>
                 <a
                   href="https://saasysolutionsllc.com"
-                  className="text-saasy-muted font-[family-name:var(--font-dm-sans)]
+                  className="text-saasy-muted font-[family-name:var(--font-poppins)]
                     text-sm hover:text-white transition-colors"
                 >
                   About
@@ -68,7 +68,7 @@ export function MarketingFooter(): React.ReactElement {
               <li>
                 <a
                   href="https://saasysolutionsllc.com/blog"
-                  className="text-saasy-muted font-[family-name:var(--font-dm-sans)]
+                  className="text-saasy-muted font-[family-name:var(--font-poppins)]
                     text-sm hover:text-white transition-colors"
                 >
                   Blog
@@ -80,7 +80,7 @@ export function MarketingFooter(): React.ReactElement {
           {/* Legal column */}
           <div>
             <h4
-              className="text-white font-[family-name:var(--font-sora)]
+              className="text-white font-[family-name:var(--font-poppins)]
                 text-sm font-semibold mb-4"
             >
               Legal
@@ -89,7 +89,7 @@ export function MarketingFooter(): React.ReactElement {
               <li>
                 <Link
                   href="/terms"
-                  className="text-saasy-muted font-[family-name:var(--font-dm-sans)]
+                  className="text-saasy-muted font-[family-name:var(--font-poppins)]
                     text-sm hover:text-white transition-colors"
                 >
                   Terms of Service
@@ -98,7 +98,7 @@ export function MarketingFooter(): React.ReactElement {
               <li>
                 <Link
                   href="/privacy"
-                  className="text-saasy-muted font-[family-name:var(--font-dm-sans)]
+                  className="text-saasy-muted font-[family-name:var(--font-poppins)]
                     text-sm hover:text-white transition-colors"
                 >
                   Privacy Policy
@@ -110,7 +110,7 @@ export function MarketingFooter(): React.ReactElement {
           {/* Support column */}
           <div>
             <h4
-              className="text-white font-[family-name:var(--font-sora)]
+              className="text-white font-[family-name:var(--font-poppins)]
                 text-sm font-semibold mb-4"
             >
               Support
@@ -119,7 +119,7 @@ export function MarketingFooter(): React.ReactElement {
               <li>
                 <a
                   href="mailto:support@hellosaasy.ai"
-                  className="text-saasy-muted font-[family-name:var(--font-dm-sans)]
+                  className="text-saasy-muted font-[family-name:var(--font-poppins)]
                     text-sm hover:text-white transition-colors"
                 >
                   support@hellosaasy.ai
@@ -128,7 +128,7 @@ export function MarketingFooter(): React.ReactElement {
               <li>
                 <a
                   href="mailto:sales@hellosaasy.ai"
-                  className="text-saasy-muted font-[family-name:var(--font-dm-sans)]
+                  className="text-saasy-muted font-[family-name:var(--font-poppins)]
                     text-sm hover:text-white transition-colors"
                 >
                   sales@hellosaasy.ai
@@ -145,7 +145,7 @@ export function MarketingFooter(): React.ReactElement {
         <div
           className="border-t border-saasy-border mt-10 pt-6
             text-center text-saasy-muted text-sm
-            font-[family-name:var(--font-dm-sans)]"
+            font-[family-name:var(--font-poppins)]"
         >
           &copy; 2026 SaaSy. A product by{" "}
           <a

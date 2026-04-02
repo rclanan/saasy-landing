@@ -54,22 +54,22 @@ export default async function BlogPostPage({
       <div className="mx-auto max-w-3xl px-6 pt-28 pb-20">
         <Link
           href="/blog"
-          className="font-[family-name:var(--font-dm-sans)]
-            text-sm font-medium text-saasy-teal
-            hover:text-saasy-teal-dim transition-colors"
+          className="font-[family-name:var(--font-poppins)]
+            text-sm font-medium text-saasy-pink
+            hover:text-saasy-rose transition-colors"
         >
           &larr; Back to blog
         </Link>
         <article className="mt-8">
           <h1
-            className="font-[family-name:var(--font-sora)]
+            className="font-[family-name:var(--font-poppins)]
               text-3xl font-bold tracking-tight text-white"
           >
             {post.title}
           </h1>
           <div
             className="mt-4 flex items-center gap-3
-              font-[family-name:var(--font-dm-sans)]
+              font-[family-name:var(--font-poppins)]
               text-sm text-saasy-muted"
           >
             <span>{post.author}</span>
@@ -90,13 +90,13 @@ export default async function BlogPostPage({
 
           <div
             className="mt-10
-              font-[family-name:var(--font-dm-sans)]
+              font-[family-name:var(--font-poppins)]
               text-saasy-text leading-relaxed"
           >
             {post.sections.map((section, i) => (
               <section key={i} className="mb-10">
                 <h2
-                  className="font-[family-name:var(--font-sora)]
+                  className="font-[family-name:var(--font-poppins)]
                     text-2xl font-bold text-white mb-4"
                 >
                   {section.heading}
@@ -115,11 +115,11 @@ export default async function BlogPostPage({
           {post.cta && (
             <div
               className="mt-12 rounded-xl border
-                border-saasy-teal/20 bg-saasy-card p-8
+                border-saasy-pink/20 bg-saasy-card p-8
                 text-center"
             >
               <p
-                className="font-[family-name:var(--font-dm-sans)]
+                className="font-[family-name:var(--font-poppins)]
                   text-lg text-saasy-text mb-6"
               >
                 {post.cta}
@@ -127,10 +127,10 @@ export default async function BlogPostPage({
               <Link
                 href="https://app.hellosaasy.ai/signup"
                 className="inline-block rounded-lg
-                  bg-saasy-teal px-6 py-3
-                  font-[family-name:var(--font-dm-sans)]
+                  bg-saasy-pink px-6 py-3
+                  font-[family-name:var(--font-poppins)]
                   text-sm font-semibold text-black
-                  hover:bg-saasy-teal-dim
+                  hover:bg-saasy-rose
                   transition-colors"
               >
                 Start Free Trial
@@ -148,9 +148,9 @@ export default async function BlogPostPage({
             {prevPost && (
               <Link
                 href={`/blog/${prevPost.slug}`}
-                className="font-[family-name:var(--font-dm-sans)]
-                  text-sm text-saasy-teal
-                  hover:text-saasy-teal-dim
+                className="font-[family-name:var(--font-poppins)]
+                  text-sm text-saasy-pink
+                  hover:text-saasy-rose
                   transition-colors"
               >
                 &larr; {prevPost.title}
@@ -161,9 +161,9 @@ export default async function BlogPostPage({
             {nextPost && (
               <Link
                 href={`/blog/${nextPost.slug}`}
-                className="font-[family-name:var(--font-dm-sans)]
-                  text-sm text-saasy-teal
-                  hover:text-saasy-teal-dim
+                className="font-[family-name:var(--font-poppins)]
+                  text-sm text-saasy-pink
+                  hover:text-saasy-rose
                   transition-colors text-right"
               >
                 {nextPost.title} &rarr;

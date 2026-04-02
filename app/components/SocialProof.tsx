@@ -37,13 +37,13 @@ export function SocialProof(): React.ReactElement {
           {metrics.map((metric) => (
             <div key={metric.label} className="text-center">
               <div
-                className="font-[family-name:var(--font-sora)]
+                className="font-[family-name:var(--font-poppins)]
                   text-3xl font-bold text-white"
               >
                 {metric.value}
               </div>
               <div
-                className="mt-1 font-[family-name:var(--font-dm-sans)]
+                className="mt-1 font-[family-name:var(--font-poppins)]
                   text-sm text-saasy-muted"
               >
                 {metric.label}
@@ -61,14 +61,14 @@ export function SocialProof(): React.ReactElement {
                 bg-saasy-card/50 p-6"
             >
               <p
-                className="font-[family-name:var(--font-dm-sans)]
+                className="font-[family-name:var(--font-poppins)]
                   leading-relaxed text-saasy-muted"
               >
                 &ldquo;{t.quote}&rdquo;
               </p>
               <footer className="mt-4">
                 <div
-                  className="font-[family-name:var(--font-sora)]
+                  className="font-[family-name:var(--font-poppins)]
                     text-sm font-semibold text-white"
                 >
                   {t.author}

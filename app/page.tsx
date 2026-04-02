@@ -64,7 +64,7 @@ export default function Home(): React.ReactElement {
         <div className="mx-auto max-w-6xl px-6">
           <div className="mx-auto mb-16 max-w-2xl text-center">
             <h2
-              className="font-[family-name:var(--font-sora)]
+              className="font-[family-name:var(--font-poppins)]
                 text-3xl font-bold text-white sm:text-4xl"
             >
               Everything your business needs to{" "}
@@ -74,7 +74,7 @@ export default function Home(): React.ReactElement {
             </h2>
             <p
               className="mt-4
-                font-[family-name:var(--font-dm-sans)]
+                font-[family-name:var(--font-poppins)]
                 text-lg text-saasy-muted"
             >
               From formation to scaling, SaaSy manages every
@@ -121,14 +121,14 @@ export default function Home(): React.ReactElement {
         <div className="mx-auto max-w-6xl px-6">
           <div className="mx-auto mb-10 max-w-2xl text-center">
             <h2
-              className="font-[family-name:var(--font-sora)]
+              className="font-[family-name:var(--font-poppins)]
                 text-3xl font-bold text-white sm:text-4xl"
             >
               Simple, transparent pricing
             </h2>
             <p
               className="mt-4
-                font-[family-name:var(--font-dm-sans)]
+                font-[family-name:var(--font-poppins)]
                 text-lg text-saasy-muted"
             >
               14-day free trial on every plan. No credit card
@@ -206,14 +206,14 @@ export default function Home(): React.ReactElement {
             py-24 text-center sm:py-32"
         >
           <h2
-            className="font-[family-name:var(--font-sora)]
+            className="font-[family-name:var(--font-poppins)]
               text-3xl font-bold text-white sm:text-5xl"
           >
             Ready to run your business smarter?
           </h2>
           <p
             className="mx-auto mt-4 max-w-xl
-              font-[family-name:var(--font-dm-sans)] text-lg
+              font-[family-name:var(--font-poppins)] text-lg
               text-saasy-muted"
           >
             Join thousands of entrepreneurs using SaaSy to build
@@ -222,11 +222,11 @@ export default function Home(): React.ReactElement {
           </p>
           <Link
             href="https://app.hellosaasy.ai/auth/register"
-            className="cta-pulse mt-8 inline-flex rounded-xl
-              bg-saasy-teal px-8 py-4
-              font-[family-name:var(--font-sora)] text-base
-              font-semibold text-saasy-dark transition-colors
-              hover:bg-saasy-teal-dim"
+            className="cta-pulse mt-8 inline-flex rounded-full
+              bg-saasy-pink px-8 py-4
+              font-[family-name:var(--font-poppins)] text-base
+              font-semibold uppercase tracking-wider text-white
+              transition-colors hover:bg-saasy-rose"
           >
             Start your free trial
           </Link>

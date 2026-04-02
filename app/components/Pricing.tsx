@@ -21,36 +21,36 @@ export function PricingCard({
       className={`relative flex flex-col rounded-2xl border p-8
         ${
           popular
-            ? "popular-glow border-saasy-teal bg-saasy-card"
+            ? "popular-glow border-saasy-pink bg-saasy-card"
             : "border-saasy-border bg-saasy-card/50"
         }`}
     >
       {popular && (
         <div
           className="absolute -top-3.5 left-1/2 -translate-x-1/2
-            rounded-full bg-saasy-teal px-4 py-1
-            font-[family-name:var(--font-sora)] text-xs
-            font-bold tracking-wider text-saasy-dark uppercase"
+            rounded-full bg-saasy-pink px-4 py-1
+            font-[family-name:var(--font-poppins)] text-xs
+            font-bold tracking-wider text-white uppercase"
         >
           Most Popular
         </div>
       )}
       <div className="mb-6">
         <h3
-          className="mb-2 font-[family-name:var(--font-sora)]
+          className="mb-2 font-[family-name:var(--font-poppins)]
             text-xl font-semibold text-white"
         >
           {name}
         </h3>
         <div className="flex items-baseline gap-1">
           <span
-            className="font-[family-name:var(--font-sora)]
+            className="font-[family-name:var(--font-poppins)]
               text-5xl font-bold text-white"
           >
             ${price}
           </span>
           <span
-            className="font-[family-name:var(--font-dm-sans)]
+            className="font-[family-name:var(--font-poppins)]
               text-saasy-muted"
           >
             {billingLabel ?? "/mo"}
@@ -63,7 +63,7 @@ export function PricingCard({
           <li
             key={feature}
             className="flex items-start gap-3
-              font-[family-name:var(--font-dm-sans)]
+              font-[family-name:var(--font-poppins)]
               text-sm text-saasy-muted"
           >
             <IconCheck />
@@ -74,13 +74,14 @@ export function PricingCard({
 
       <Link
         href="https://app.hellosaasy.ai/auth/register"
-        className={`block rounded-xl py-3.5 text-center
-          font-[family-name:var(--font-sora)] text-sm
-          font-semibold transition-all duration-200
+        className={`block rounded-full py-3.5 text-center
+          font-[family-name:var(--font-poppins)] text-sm
+          font-semibold uppercase tracking-wider
+          transition-all duration-200
           ${
             popular
-              ? "bg-saasy-teal text-saasy-dark hover:bg-saasy-teal-dim"
-              : "border border-saasy-border bg-saasy-card-hover text-white hover:border-saasy-teal/40"
+              ? "bg-saasy-pink text-white hover:bg-saasy-rose"
+              : "border border-saasy-border bg-saasy-card-hover text-white hover:border-saasy-pink/40"
           }`}
       >
         Start free trial
@@ -110,11 +111,11 @@ export function PricingToggle({
           type="button"
           onClick={() => onChange("monthly")}
           className={`rounded-full px-5 py-2
-            font-[family-name:var(--font-sora)] text-sm font-semibold
+            font-[family-name:var(--font-poppins)] text-sm font-semibold
             transition-all duration-200
             ${
               interval === "monthly"
-                ? "bg-saasy-teal text-saasy-dark"
+                ? "bg-saasy-pink text-white"
                 : "text-saasy-muted hover:text-white"
             }`}
         >
@@ -124,11 +125,11 @@ export function PricingToggle({
           type="button"
           onClick={() => onChange("annual")}
           className={`rounded-full px-5 py-2
-            font-[family-name:var(--font-sora)] text-sm font-semibold
+            font-[family-name:var(--font-poppins)] text-sm font-semibold
             transition-all duration-200
             ${
               interval === "annual"
-                ? "bg-saasy-teal text-saasy-dark"
+                ? "bg-saasy-pink text-white"
                 : "text-saasy-muted hover:text-white"
             }`}
         >
@@ -137,10 +138,10 @@ export function PricingToggle({
       </div>
       {interval === "annual" && (
         <span
-          className="rounded-full bg-saasy-teal/10
-            border border-saasy-teal/20 px-2.5 py-0.5
-            text-xs font-medium text-saasy-teal
-            font-[family-name:var(--font-dm-sans)]"
+          className="rounded-full bg-saasy-pink/10
+            border border-saasy-pink/20 px-2.5 py-0.5
+            text-xs font-medium text-saasy-pink
+            font-[family-name:var(--font-poppins)]"
         >
           Save 20%
         </span>

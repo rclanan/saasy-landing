@@ -43,7 +43,7 @@ export function FAQ(): React.ReactElement {
       <div className="mx-auto max-w-3xl px-6">
         <h2
           className="mb-12 text-center
-            font-[family-name:var(--font-sora)]
+            font-[family-name:var(--font-poppins)]
             text-3xl font-bold text-white sm:text-4xl"
         >
           Frequently asked questions
@@ -67,7 +67,7 @@ export function FAQ(): React.ReactElement {
                   >
                     <span
                       className="text-white
-                        font-[family-name:var(--font-sora)]
+                        font-[family-name:var(--font-poppins)]
                         text-base font-medium"
                     >
                       {item.question}
@@ -92,7 +92,7 @@ export function FAQ(): React.ReactElement {
                   <dd>
                     <p
                       className="text-saasy-muted
-                        font-[family-name:var(--font-dm-sans)]
+                        font-[family-name:var(--font-poppins)]
                         text-sm pb-4 pt-3"
                     >
                       {item.answer}

@@ -10,13 +10,13 @@ export function TrustBadge({
   return (
     <div className="text-center">
       <div
-        className="font-[family-name:var(--font-sora)]
+        className="font-[family-name:var(--font-poppins)]
           text-2xl font-bold text-white"
       >
         {label}
       </div>
       <div
-        className="mt-1 font-[family-name:var(--font-dm-sans)]
+        className="mt-1 font-[family-name:var(--font-poppins)]
           text-sm text-saasy-muted"
       >
         {sublabel}

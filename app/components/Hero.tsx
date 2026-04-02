@@ -11,22 +11,22 @@ export function Hero(): React.ReactElement {
         {/* Badge */}
         <div
           className="mb-8 inline-flex items-center gap-2
-            rounded-full border border-saasy-teal/20
-            bg-saasy-teal/5 px-4 py-1.5"
+            rounded-full border border-saasy-pink/20
+            bg-saasy-pink/5 px-4 py-1.5"
         >
           <span
-            className="h-2 w-2 rounded-full bg-saasy-teal"
+            className="h-2 w-2 rounded-full bg-saasy-pink"
           />
           <span
-            className="font-[family-name:var(--font-dm-sans)]
-              text-sm text-saasy-teal"
+            className="font-[family-name:var(--font-poppins)]
+              text-sm text-saasy-pink"
           >
             Now in public beta
           </span>
         </div>
 
         <h1
-          className="font-[family-name:var(--font-sora)]
+          className="font-[family-name:var(--font-poppins)]
             text-5xl leading-[1.1] font-extrabold tracking-tight
             text-white sm:text-7xl"
         >
@@ -37,7 +37,7 @@ export function Hero(): React.ReactElement {
 
         <p
           className="mx-auto mt-6 max-w-2xl
-            font-[family-name:var(--font-dm-sans)] text-lg
+            font-[family-name:var(--font-poppins)] text-lg
             leading-relaxed text-saasy-muted sm:text-xl"
         >
           SaaSy guides you from first idea to thriving
@@ -52,21 +52,21 @@ export function Hero(): React.ReactElement {
         >
           <Link
             href="https://app.hellosaasy.ai/auth/register"
-            className="cta-pulse inline-flex rounded-xl
-              bg-saasy-teal px-8 py-4
-              font-[family-name:var(--font-sora)] text-base
-              font-semibold text-saasy-dark transition-colors
-              hover:bg-saasy-teal-dim"
+            className="cta-pulse inline-flex rounded-full
+              bg-saasy-pink px-8 py-4
+              font-[family-name:var(--font-poppins)] text-base
+              font-semibold uppercase tracking-wider text-white
+              transition-colors hover:bg-saasy-rose"
           >
             Start Free Trial
           </Link>
           <Link
             href="#features"
-            className="inline-flex items-center gap-2 rounded-xl
+            className="inline-flex items-center gap-2 rounded-full
               border border-saasy-border px-8 py-4
-              font-[family-name:var(--font-sora)] text-base
+              font-[family-name:var(--font-poppins)] text-base
               font-semibold text-saasy-muted transition-colors
-              hover:border-saasy-teal/30 hover:text-white"
+              hover:border-saasy-pink/30 hover:text-white"
           >
             See how it works
             <svg
@@ -87,7 +87,7 @@ export function Hero(): React.ReactElement {
 
         <p
           className="mt-4
-            font-[family-name:var(--font-dm-sans)]
+            font-[family-name:var(--font-poppins)]
             text-sm text-saasy-muted"
         >
           14-day free trial on Growth plan. No credit card

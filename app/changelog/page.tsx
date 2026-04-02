@@ -98,11 +98,11 @@ const TYPE_STYLES: Record<
 > = {
   feature: {
     label: "New",
-    className: "bg-saasy-teal/10 text-saasy-teal",
+    className: "bg-saasy-pink/10 text-saasy-pink",
   },
   improvement: {
     label: "Improved",
-    className: "bg-saasy-cyan/10 text-saasy-cyan",
+    className: "bg-saasy-orange/10 text-saasy-orange",
   },
   fix: {
     label: "Fixed",
@@ -116,13 +116,13 @@ export default function ChangelogPage() {
       <SiteNav />
       <div className="mx-auto max-w-3xl px-6 pt-28 pb-20">
         <h1
-          className="font-[family-name:var(--font-sora)]
+          className="font-[family-name:var(--font-poppins)]
             text-4xl font-bold tracking-tight text-white"
         >
           Changelog
         </h1>
         <p
-          className="mt-4 font-[family-name:var(--font-dm-sans)]
+          className="mt-4 font-[family-name:var(--font-poppins)]
             text-lg text-saasy-muted"
         >
           New features, improvements, and fixes.
@@ -133,15 +133,15 @@ export default function ChangelogPage() {
             <div key={entry.version}>
               <div className="flex items-center gap-3">
                 <span
-                  className="rounded-full bg-saasy-teal px-3 py-0.5
-                    font-[family-name:var(--font-sora)] text-sm
-                    font-semibold text-saasy-dark"
+                  className="rounded-full bg-saasy-pink px-3 py-0.5
+                    font-[family-name:var(--font-poppins)] text-sm
+                    font-semibold text-white"
                 >
                   v{entry.version}
                 </span>
                 <time
                   dateTime={entry.date}
-                  className="font-[family-name:var(--font-dm-sans)]
+                  className="font-[family-name:var(--font-poppins)]
                     text-sm text-saasy-muted"
                 >
                   {new Date(entry.date).toLocaleDateString(
@@ -155,7 +155,7 @@ export default function ChangelogPage() {
                 </time>
               </div>
               <h2
-                className="mt-3 font-[family-name:var(--font-sora)]
+                className="mt-3 font-[family-name:var(--font-poppins)]
                   text-xl font-semibold text-white"
               >
                 {entry.title}
@@ -167,7 +167,7 @@ export default function ChangelogPage() {
                     <li
                       key={i}
                       className="flex items-start gap-3
-                        font-[family-name:var(--font-dm-sans)]
+                        font-[family-name:var(--font-poppins)]
                         text-sm text-saasy-text"
                     >
                       <span

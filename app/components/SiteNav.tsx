@@ -58,9 +58,11 @@ export function SiteNav(): React.ReactElement {
         >
           <Link
             href="/"
-            className="font-[family-name:var(--font-sora)]
+            className="flex items-center gap-2
+              font-[family-name:var(--font-poppins)]
               text-xl font-bold text-white"
           >
+            <img src="/logomark.svg" alt="" className="h-7 w-7" />
             <span className="gradient-text">SaaSy</span>
           </Link>
 
@@ -71,7 +73,7 @@ export function SiteNav(): React.ReactElement {
                 key={link.href}
                 href={resolveHref(link.href)}
                 className={`hidden
-                  font-[family-name:var(--font-dm-sans)]
+                  font-[family-name:var(--font-poppins)]
                   text-sm transition-colors
                   hover:text-white md:block ${
                     isActive(link.href)
@@ -85,7 +87,7 @@ export function SiteNav(): React.ReactElement {
             <Link
               href="https://app.hellosaasy.ai/login"
               className="hidden
-                font-[family-name:var(--font-dm-sans)]
+                font-[family-name:var(--font-poppins)]
                 text-sm text-saasy-muted transition-colors
                 hover:text-white md:block"
             >
@@ -93,10 +95,10 @@ export function SiteNav(): React.ReactElement {
             </Link>
             <Link
               href="https://app.hellosaasy.ai/auth/register"
-              className="hidden rounded-lg bg-saasy-teal px-4
-                py-2 font-[family-name:var(--font-sora)]
-                text-sm font-semibold text-saasy-dark
-                transition-colors hover:bg-saasy-teal-dim
+              className="hidden rounded-full bg-saasy-pink px-4
+                py-2 font-[family-name:var(--font-poppins)]
+                text-sm font-semibold uppercase tracking-wider
+                text-white transition-colors hover:bg-saasy-rose
                 md:flex"
             >
               Start free trial
@@ -112,7 +114,7 @@ export function SiteNav(): React.ReactElement {
                 justify-center rounded-lg border
                 border-saasy-border text-saasy-muted
                 transition-colors
-                hover:border-saasy-teal/40
+                hover:border-saasy-pink/40
                 hover:text-white md:hidden"
             >
               {open ? (
@@ -176,9 +178,11 @@ export function SiteNav(): React.ReactElement {
             border-b border-saasy-border px-6 py-4"
         >
           <span
-            className="font-[family-name:var(--font-sora)]
+            className="flex items-center gap-2
+              font-[family-name:var(--font-poppins)]
               text-lg font-bold gradient-text"
           >
+            <img src="/logomark.svg" alt="" className="h-6 w-6" />
             SaaSy
           </span>
           <button
@@ -214,7 +218,7 @@ export function SiteNav(): React.ReactElement {
               href={resolveHref(link.href)}
               onClick={close}
               className={`rounded-lg px-3 py-3
-                font-[family-name:var(--font-dm-sans)]
+                font-[family-name:var(--font-poppins)]
                 text-base transition-colors
                 hover:bg-saasy-border/30
                 hover:text-white ${
@@ -238,10 +242,10 @@ export function SiteNav(): React.ReactElement {
             onClick={close}
             className="w-full rounded-lg border
               border-saasy-border px-4 py-3 text-center
-              font-[family-name:var(--font-sora)] text-sm
+              font-[family-name:var(--font-poppins)] text-sm
               font-semibold text-saasy-muted
               transition-colors
-              hover:border-saasy-teal/40
+              hover:border-saasy-pink/40
               hover:text-white"
           >
             Sign In
@@ -249,11 +253,11 @@ export function SiteNav(): React.ReactElement {
           <Link
             href="https://app.hellosaasy.ai/auth/register"
             onClick={close}
-            className="w-full rounded-lg bg-saasy-teal px-4
+            className="w-full rounded-full bg-saasy-pink px-4
               py-3 text-center
-              font-[family-name:var(--font-sora)] text-sm
-              font-semibold text-saasy-dark
-              transition-colors hover:bg-saasy-teal-dim"
+              font-[family-name:var(--font-poppins)] text-sm
+              font-semibold uppercase tracking-wider text-white
+              transition-colors hover:bg-saasy-rose"
           >
             Start Free Trial
           </Link>

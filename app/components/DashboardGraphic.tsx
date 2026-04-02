@@ -4,7 +4,7 @@ export function DashboardGraphic(): React.ReactElement {
       {/* Outer glow */}
       <div
         className="absolute inset-0 -m-4 rounded-2xl
-          bg-gradient-to-br from-saasy-teal/5 to-saasy-cyan/5
+          bg-gradient-to-br from-saasy-pink/5 to-saasy-orange/5
           blur-xl"
       />
       {/* Card */}
@@ -18,7 +18,7 @@ export function DashboardGraphic(): React.ReactElement {
           <div className="h-3 w-3 rounded-full bg-yellow-500/60" />
           <div className="h-3 w-3 rounded-full bg-green-500/60" />
           <span
-            className="ml-3 font-[family-name:var(--font-dm-sans)]
+            className="ml-3 font-[family-name:var(--font-poppins)]
               text-xs text-saasy-muted"
           >
             Business Command Center
@@ -31,19 +31,19 @@ export function DashboardGraphic(): React.ReactElement {
             {
               name: "LLC Formation",
               score: "Complete",
-              color: "bg-saasy-teal",
+              color: "bg-saasy-pink",
               width: "100%",
             },
             {
               name: "Business License",
               score: "In Progress",
-              color: "bg-saasy-cyan",
+              color: "bg-saasy-orange",
               width: "75%",
             },
             {
               name: "Tax Registration",
               score: "Needs Attention",
-              color: "bg-saasy-popular",
+              color: "bg-saasy-orange",
               width: "45%",
             },
             {
@@ -59,13 +59,13 @@ export function DashboardGraphic(): React.ReactElement {
                   justify-between"
               >
                 <span
-                  className="font-[family-name:var(--font-dm-sans)]
+                  className="font-[family-name:var(--font-poppins)]
                     text-sm text-saasy-text"
                 >
                   {item.name}
                 </span>
                 <span
-                  className="font-[family-name:var(--font-sora)]
+                  className="font-[family-name:var(--font-poppins)]
                     text-sm font-semibold text-saasy-muted"
                 >
                   {item.score}
@@ -97,7 +97,7 @@ export function DashboardGraphic(): React.ReactElement {
         >
           <span className="h-2 w-2 rounded-full bg-red-500" />
           <span
-            className="font-[family-name:var(--font-dm-sans)]
+            className="font-[family-name:var(--font-poppins)]
               text-xs text-red-400"
           >
             2 compliance deadlines this week

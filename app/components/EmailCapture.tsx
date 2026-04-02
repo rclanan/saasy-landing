@@ -55,10 +55,10 @@ export function EmailCapture(): React.ReactElement {
           <div
             className="mx-auto mb-4 flex h-14 w-14
               items-center justify-center rounded-full
-              bg-saasy-teal/20"
+              bg-saasy-pink/20"
           >
             <svg
-              className="h-7 w-7 text-saasy-teal"
+              className="h-7 w-7 text-saasy-pink"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -73,14 +73,14 @@ export function EmailCapture(): React.ReactElement {
             </svg>
           </div>
           <h3
-            className="font-[family-name:var(--font-sora)]
+            className="font-[family-name:var(--font-poppins)]
               text-2xl font-bold text-white"
           >
             You&apos;re in!
           </h3>
           <p
             className="mt-2
-              font-[family-name:var(--font-dm-sans)]
+              font-[family-name:var(--font-poppins)]
               text-saasy-muted"
           >
             Check your inbox for a welcome email. We&apos;ll
@@ -104,14 +104,14 @@ export function EmailCapture(): React.ReactElement {
       >
         <h2
           id="newsletter-heading"
-          className="font-[family-name:var(--font-sora)]
+          className="font-[family-name:var(--font-poppins)]
             text-2xl font-bold text-white sm:text-3xl"
         >
           Get product updates
         </h2>
         <p
           className="mx-auto mt-3 max-w-lg
-            font-[family-name:var(--font-dm-sans)]
+            font-[family-name:var(--font-poppins)]
             text-saasy-muted"
         >
           Join 2,400+ founders getting weekly insights on
@@ -143,19 +143,19 @@ export function EmailCapture(): React.ReactElement {
             aria-invalid={errorMsg ? true : undefined}
             className="flex-1 rounded-lg border border-saasy-border
               bg-saasy-dark px-4 py-3
-              font-[family-name:var(--font-dm-sans)] text-sm
+              font-[family-name:var(--font-poppins)] text-sm
               text-white placeholder-saasy-muted/60
               transition-colors
-              focus:border-saasy-teal focus:outline-none
-              focus:ring-1 focus:ring-saasy-teal"
+              focus:border-saasy-pink focus:outline-none
+              focus:ring-1 focus:ring-saasy-pink"
           />
           <button
             type="submit"
             disabled={status === "loading"}
-            className="rounded-lg bg-saasy-teal px-6 py-3
-              font-[family-name:var(--font-sora)] text-sm
-              font-semibold text-saasy-dark
-              transition-colors hover:bg-saasy-teal-dim
+            className="rounded-full bg-saasy-pink px-6 py-3
+              font-[family-name:var(--font-poppins)] text-sm
+              font-semibold text-white
+              transition-colors hover:bg-saasy-rose
               disabled:opacity-60 disabled:cursor-not-allowed"
           >
             {status === "loading" ? "Subscribing..." : "Subscribe"}
@@ -167,7 +167,7 @@ export function EmailCapture(): React.ReactElement {
             id="newsletter-error"
             role="alert"
             className="mt-2 text-sm text-red-400
-              font-[family-name:var(--font-dm-sans)]"
+              font-[family-name:var(--font-poppins)]"
           >
             {errorMsg}
           </p>
@@ -175,7 +175,7 @@ export function EmailCapture(): React.ReactElement {
 
         <p
           className="mt-4 text-xs text-saasy-muted/70
-            font-[family-name:var(--font-dm-sans)]"
+            font-[family-name:var(--font-poppins)]"
         >
           No spam. Unsubscribe anytime.
         </p>
@@ -229,7 +229,7 @@ export function FooterEmailCapture(): React.ReactElement {
             px-4 py-3"
         >
           <svg
-            className="h-5 w-5 shrink-0 text-saasy-teal"
+            className="h-5 w-5 shrink-0 text-saasy-pink"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -244,7 +244,7 @@ export function FooterEmailCapture(): React.ReactElement {
           </svg>
           <p
             className="text-sm text-saasy-muted
-              font-[family-name:var(--font-dm-sans)]"
+              font-[family-name:var(--font-poppins)]"
           >
             You&apos;re subscribed! Watch your inbox.
           </p>
@@ -265,14 +265,14 @@ export function FooterEmailCapture(): React.ReactElement {
         <h4
           id="footer-newsletter-heading"
           className="text-white
-            font-[family-name:var(--font-sora)]
+            font-[family-name:var(--font-poppins)]
             text-sm font-semibold"
         >
           Stay in the loop
         </h4>
         <p
           className="mt-1 text-xs text-saasy-muted
-            font-[family-name:var(--font-dm-sans)]"
+            font-[family-name:var(--font-poppins)]"
         >
           Weekly insights on retention, growth, and SaaS.
           No spam.
@@ -304,19 +304,19 @@ export function FooterEmailCapture(): React.ReactElement {
             aria-invalid={errorMsg ? true : undefined}
             className="flex-1 rounded-md border border-saasy-border
               bg-saasy-dark px-3 py-2
-              font-[family-name:var(--font-dm-sans)] text-sm
+              font-[family-name:var(--font-poppins)] text-sm
               text-white placeholder-saasy-muted/60
               transition-colors
-              focus:border-saasy-teal focus:outline-none
-              focus:ring-1 focus:ring-saasy-teal"
+              focus:border-saasy-pink focus:outline-none
+              focus:ring-1 focus:ring-saasy-pink"
           />
           <button
             type="submit"
             disabled={status === "loading"}
-            className="rounded-md bg-saasy-teal px-4 py-2
-              font-[family-name:var(--font-sora)] text-sm
-              font-semibold text-saasy-dark
-              transition-colors hover:bg-saasy-teal-dim
+            className="rounded-full bg-saasy-pink px-4 py-2
+              font-[family-name:var(--font-poppins)] text-sm
+              font-semibold text-white
+              transition-colors hover:bg-saasy-rose
               disabled:opacity-60 disabled:cursor-not-allowed"
           >
             {status === "loading" ? "..." : "Subscribe"}
@@ -327,7 +327,7 @@ export function FooterEmailCapture(): React.ReactElement {
             id="footer-newsletter-error"
             role="alert"
             className="mt-1 text-xs text-red-400
-              font-[family-name:var(--font-dm-sans)]"
+              font-[family-name:var(--font-poppins)]"
           >
             {errorMsg}
           </p>

@@ -17,13 +17,13 @@ export default function BlogPage() {
       <SiteNav />
       <div className="mx-auto max-w-4xl px-6 pt-28 pb-20">
         <h1
-          className="font-[family-name:var(--font-sora)]
+          className="font-[family-name:var(--font-poppins)]
             text-4xl font-bold tracking-tight text-white"
         >
           Blog
         </h1>
         <p
-          className="mt-4 font-[family-name:var(--font-dm-sans)]
+          className="mt-4 font-[family-name:var(--font-poppins)]
             text-lg text-saasy-muted"
         >
           Insights on customer success, churn reduction,
@@ -39,7 +39,7 @@ export default function BlogPage() {
             >
               <div
                 className="flex items-center gap-3
-                  font-[family-name:var(--font-dm-sans)]
+                  font-[family-name:var(--font-poppins)]
                   text-sm text-saasy-muted"
               >
                 <time dateTime={post.date}>
@@ -56,18 +56,18 @@ export default function BlogPage() {
                 <span>{post.readTime}</span>
               </div>
               <h2
-                className="mt-2 font-[family-name:var(--font-sora)]
+                className="mt-2 font-[family-name:var(--font-poppins)]
                   text-xl font-semibold text-white"
               >
                 <Link
                   href={`/blog/${post.slug}`}
-                  className="hover:text-saasy-teal transition-colors"
+                  className="hover:text-saasy-pink transition-colors"
                 >
                   {post.title}
                 </Link>
               </h2>
               <p
-                className="mt-2 font-[family-name:var(--font-dm-sans)]
+                className="mt-2 font-[family-name:var(--font-poppins)]
                   text-saasy-muted"
               >
                 {post.excerpt}
@@ -75,9 +75,9 @@ export default function BlogPage() {
               <Link
                 href={`/blog/${post.slug}`}
                 className="mt-4 inline-block
-                  font-[family-name:var(--font-dm-sans)]
-                  text-sm font-medium text-saasy-teal
-                  hover:text-saasy-teal-dim transition-colors"
+                  font-[family-name:var(--font-poppins)]
+                  text-sm font-medium text-saasy-pink
+                  hover:text-saasy-rose transition-colors"
               >
                 Read more &rarr;
               </Link>

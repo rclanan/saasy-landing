@@ -69,10 +69,10 @@ export default function IntegrationsPage() {
       <div className="max-w-5xl mx-auto px-6 pt-28 pb-16">
         {/* Hero */}
         <header className="mb-14 text-center">
-          <h1 className="font-[family-name:var(--font-sora)] text-4xl font-bold text-white">
+          <h1 className="font-[family-name:var(--font-poppins)] text-4xl font-bold text-white">
             Connect your favorite tools
           </h1>
-          <p className="mt-4 font-[family-name:var(--font-dm-sans)] text-saasy-muted text-lg max-w-2xl mx-auto">
+          <p className="mt-4 font-[family-name:var(--font-poppins)] text-saasy-muted text-lg max-w-2xl mx-auto">
             SaaSy integrates with the platforms you already use to give you a
             complete view of your business.
           </p>
@@ -87,15 +87,15 @@ export default function IntegrationsPage() {
             >
               <div className="flex items-start justify-between gap-2">
                 <div>
-                  <h2 className="font-[family-name:var(--font-sora)] text-lg font-semibold text-white">
+                  <h2 className="font-[family-name:var(--font-poppins)] text-lg font-semibold text-white">
                     {integration.name}
                   </h2>
-                  <p className="font-[family-name:var(--font-dm-sans)] text-xs text-saasy-muted mt-0.5">
+                  <p className="font-[family-name:var(--font-poppins)] text-xs text-saasy-muted mt-0.5">
                     {integration.category}
                   </p>
                 </div>
                 {integration.status === 'Available' ? (
-                  <span className="shrink-0 rounded-full bg-saasy-teal/10 border border-saasy-teal/20 px-3 py-1 text-xs font-medium text-saasy-teal">
+                  <span className="shrink-0 rounded-full bg-saasy-pink/10 border border-saasy-pink/20 px-3 py-1 text-xs font-medium text-saasy-pink">
                     Available
                   </span>
                 ) : (
@@ -104,7 +104,7 @@ export default function IntegrationsPage() {
                   </span>
                 )}
               </div>
-              <p className="font-[family-name:var(--font-dm-sans)] text-sm text-saasy-muted leading-relaxed">
+              <p className="font-[family-name:var(--font-poppins)] text-sm text-saasy-muted leading-relaxed">
                 {integration.description}
               </p>
             </div>
@@ -113,15 +113,15 @@ export default function IntegrationsPage() {
 
         {/* CTA section */}
         <div className="mt-16 rounded-2xl border border-saasy-border bg-saasy-card/50 p-10 text-center">
-          <h2 className="font-[family-name:var(--font-sora)] text-2xl font-bold text-white">
+          <h2 className="font-[family-name:var(--font-poppins)] text-2xl font-bold text-white">
             Need a custom integration?
           </h2>
-          <p className="mt-3 font-[family-name:var(--font-dm-sans)] text-saasy-muted max-w-lg mx-auto">
+          <p className="mt-3 font-[family-name:var(--font-poppins)] text-saasy-muted max-w-lg mx-auto">
             Our API (Growth plan and above) lets you connect any tool.
           </p>
           <a
             href="https://app.hellosaasy.ai/signup"
-            className="mt-6 inline-block rounded-xl bg-saasy-teal px-8 py-3 font-[family-name:var(--font-sora)] text-sm font-semibold text-saasy-dark hover:opacity-90 transition-opacity"
+            className="mt-6 inline-block rounded-full bg-saasy-pink px-8 py-3 font-[family-name:var(--font-poppins)] text-sm font-semibold uppercase tracking-wider text-white hover:opacity-90 transition-opacity"
           >
             Start Free Trial
           </a>
