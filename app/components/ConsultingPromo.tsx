@@ -27,22 +27,22 @@ export function ConsultingPromo() {
                   text-sm font-semibold uppercase tracking-wider
                   text-saasy-orange"
               >
-                SaaSy Solutions Consulting
+                SaaSy Solutions &middot; 25+ Years of Experience
               </p>
               <h2
                 className="mt-2 font-[family-name:var(--font-poppins)]
                   text-2xl font-bold text-white sm:text-3xl"
               >
-                Need a custom solution?
+                Need systems built for you?
               </h2>
               <p
                 className="mt-3 font-[family-name:var(--font-poppins)]
                   text-base text-saasy-muted sm:text-lg"
               >
-                Our consulting team builds tailored AI automations,
-                custom integrations, and workflow solutions for growing
-                businesses. Fixed monthly pricing starting at $999/mo
-                &mdash; no hourly surprises.
+                Our senior engineering team designs, builds, and manages
+                custom AI automations, integrations, and workflow systems.
+                One partner replaces multiple tools, contractors, and
+                inefficiencies &mdash; live in weeks, not months.
               </p>
             </div>
 
