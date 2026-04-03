@@ -84,8 +84,8 @@ export function EmailCapture(): React.ReactElement {
               text-saasy-muted"
           >
             Check your inbox for a welcome email. We&apos;ll
-            send you weekly insights on retention, growth, and
-            running smarter SaaS.
+            send you weekly insights on business formation,
+            compliance, scaling, and AI strategies.
           </p>
         </div>
       </section>
@@ -115,7 +115,7 @@ export function EmailCapture(): React.ReactElement {
             text-saasy-muted"
         >
           Join 2,400+ founders getting weekly insights on
-          retention, growth, and running smarter SaaS.
+          business formation, compliance, scaling, and AI strategies.
         </p>
 
         <form
@@ -274,8 +274,8 @@ export function FooterEmailCapture(): React.ReactElement {
           className="mt-1 text-xs text-saasy-muted
             font-[family-name:var(--font-poppins)]"
         >
-          Weekly insights on retention, growth, and SaaS.
-          No spam.
+          Weekly compliance updates, growth strategies, and
+          founder wins. No spam.
         </p>
         <form
           onSubmit={handleSubmit}

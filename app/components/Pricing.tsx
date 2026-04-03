@@ -73,7 +73,7 @@ export function PricingCard({
       </ul>
 
       <Link
-        href="https://app.hellosaasy.ai/auth/register"
+        href="https://app.hellosaasy.ai/signup"
         className={`block rounded-full py-3.5 text-center
           font-[family-name:var(--font-poppins)] text-sm
           font-semibold uppercase tracking-wider

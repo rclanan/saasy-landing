@@ -242,7 +242,7 @@ export default function Home(): React.ReactElement {
             trial today.
           </p>
           <Link
-            href="https://app.hellosaasy.ai/auth/register"
+            href="https://app.hellosaasy.ai/signup"
             className="cta-pulse mt-8 inline-flex rounded-full
               bg-saasy-pink px-8 py-4
               font-[family-name:var(--font-poppins)] text-base

@@ -6,8 +6,8 @@ import { MarketingFooter } from "../components/MarketingFooter";
 export const metadata: Metadata = {
   title: "Customers — SaaSy",
   description:
-    "See how SaaS teams use SaaSy to reduce churn " +
-    "and grow revenue.",
+    "See how founders use SaaSy to save time, cut costs, " +
+    "and stay on top of every business they run.",
 };
 
 interface CaseStudy {
@@ -23,38 +23,39 @@ interface CaseStudy {
 const CASE_STUDIES: CaseStudy[] = [
   {
     company: "DataFlow",
-    industry: "Data Analytics",
-    metric: "30%",
-    metricLabel: "churn reduction",
+    industry: "E-commerce & Logistics",
+    metric: "100%",
+    metricLabel: "compliance deadlines met",
     quote:
-      "SaaSy cut our churn rate by 30% in the first " +
-      "quarter. The health scoring alone is worth " +
-      "the investment.",
+      "Before SaaSy, I missed a state tax filing and " +
+      "ate a $4K penalty. Now every deadline is tracked " +
+      "automatically — I haven't missed one since.",
     author: "Sarah Chen",
-    authorTitle: "VP of Customer Success",
+    authorTitle: "Founder & CEO",
   },
   {
     company: "ScaleUp",
-    industry: "Operations Software",
-    metric: "3x",
-    metricLabel: "tools consolidated",
+    industry: "Multi-brand Retail",
+    metric: "15 hrs",
+    metricLabel: "saved per week",
     quote:
-      "We replaced three separate tools with SaaSy. " +
-      "The AI guidance has been a game-changer for " +
-      "our CS team.",
+      "I run three businesses. SaaSy replaced the " +
+      "spreadsheets, the bookkeeper check-ins, and two " +
+      "SaaS subscriptions. I got my weekends back.",
     author: "Marcus Rivera",
-    authorTitle: "Head of Operations",
+    authorTitle: "Serial Entrepreneur",
   },
   {
     company: "CloudMetrics",
-    industry: "Cloud Monitoring",
-    metric: "$180K",
-    metricLabel: "ARR saved",
+    industry: "Professional Services",
+    metric: "$48K",
+    metricLabel: "operational costs cut annually",
     quote:
-      "The proactive alerts caught two at-risk " +
-      "accounts we would have completely missed.",
+      "SaaSy flagged redundant software subscriptions " +
+      "I forgot I was paying for. It paid for itself " +
+      "in the first month.",
     author: "Emily Park",
-    authorTitle: "CEO",
+    authorTitle: "Founder",
   },
 ];
 
@@ -68,7 +69,7 @@ export default function CustomersPage() {
             className="font-[family-name:var(--font-poppins)]
               text-sm font-medium text-saasy-pink"
           >
-            Trusted by 200+ SaaS teams
+            Trusted by 200+ founders
           </p>
           <h1
             className="mt-2 font-[family-name:var(--font-poppins)]
@@ -80,8 +81,8 @@ export default function CustomersPage() {
             className="mt-4 font-[family-name:var(--font-poppins)]
               text-lg text-saasy-muted"
           >
-            See how teams use SaaSy to reduce churn and
-            grow revenue.
+            See how founders use SaaSy to save time, cut
+            costs, and stay on top of every business they run.
           </p>
         </div>
 

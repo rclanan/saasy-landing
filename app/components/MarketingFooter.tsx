@@ -44,6 +44,15 @@ export function MarketingFooter(): React.ReactElement {
                   Integrations
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/changelog"
+                  className="text-saasy-muted font-[family-name:var(--font-poppins)]
+                    text-sm hover:text-white transition-colors"
+                >
+                  Changelog
+                </Link>
+              </li>
             </ul>
           </div>
 

@@ -19,44 +19,44 @@ interface Integration {
 const integrations: Integration[] = [
   {
     name: 'Stripe',
-    category: 'Payment processing',
+    category: 'Revenue & Payments',
     description:
-      'Automatically sync invoices, subscriptions, and revenue data. Track MRR and payment health in real time.',
+      'See your revenue, subscriptions, and payment status in real-time without logging into Stripe. SaaSy pulls it all in automatically.',
     status: 'Available',
   },
   {
     name: 'HubSpot',
-    category: 'CRM & Marketing',
+    category: 'CRM & Contacts',
     description:
-      'Import contacts, track deals, and sync customer interactions. Keep your CRM in sync without manual entry.',
+      'Keep your customer relationships in one place — contacts, deals, and activity sync automatically so you never lose track of a lead.',
     status: 'Coming Soon',
   },
   {
     name: 'Intercom',
-    category: 'Customer Messaging',
+    category: 'Customer Conversations',
     description:
-      'Pull in conversation history and support metrics. Understand customer engagement across channels.',
+      'Stop switching tabs to check support threads. SaaSy surfaces conversation history and sentiment so you know which customers need attention.',
     status: 'Coming Soon',
   },
   {
     name: 'Salesforce',
-    category: 'Enterprise CRM',
+    category: 'CRM & Sales Pipeline',
     description:
-      'Full bidirectional sync with Salesforce objects. Contacts, opportunities, and custom fields.',
+      'Keep your customer relationships in one place — contacts, deals, and activity sync automatically between SaaSy and Salesforce.',
     status: 'Coming Soon',
   },
   {
     name: 'Jira',
-    category: 'Project Management',
+    category: 'Project Tracking',
     description:
-      'Track project progress and team velocity. Link business milestones to development work.',
+      'Connect your dev work to business goals. See project status and blockers without asking your team for updates.',
     status: 'Coming Soon',
   },
   {
     name: 'Slack',
-    category: 'Team Communication',
+    category: 'Real-time Alerts',
     description:
-      'Get real-time alerts and daily briefings delivered to your Slack channels.',
+      'Get daily business briefings and instant alerts — missed payments, compliance deadlines, key metrics — right in Slack where you already are.',
     status: 'Available',
   },
 ];

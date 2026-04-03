@@ -55,15 +55,15 @@ const COMPARISONS: ComparisonRow[] = [
     otherTools: "Sometimes",
   },
   {
-    feature: "Health scoring & churn prediction",
-    saasy: "Built-in AI",
+    feature: "AI business insights",
+    saasy: "Built-in co-founder AI",
     spreadsheets: "Not possible",
     hiring: "Custom build required",
     otherTools: "Rare / enterprise only",
   },
   {
     feature: "Proactive alerts",
-    saasy: "Email + Slack",
+    saasy: "Email + Slack, before deadlines",
     spreadsheets: "None",
     hiring: "Manual monitoring",
     otherTools: "Basic email",
@@ -77,7 +77,7 @@ const COMPARISONS: ComparisonRow[] = [
   },
   {
     feature: "Setup complexity",
-    saasy: "No-code, guided",
+    saasy: "2-minute guided setup",
     spreadsheets: "DIY formulas",
     hiring: "Job posting + onboarding",
     otherTools: "Moderate",
@@ -114,9 +114,9 @@ export default function ComparePage() {
               font-[family-name:var(--font-poppins)] text-lg
               text-saasy-muted"
           >
-            Stop duct-taping spreadsheets, juggling tools, or
-            overpaying for hires. SaaSy replaces it all with one
-            AI-powered platform.
+            Replace your spreadsheets, your bookkeeper, your
+            compliance tracker, and three SaaS subscriptions with
+            one AI-powered business operating system.
           </p>
         </div>
       </section>

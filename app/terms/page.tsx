@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Terms of Service | SaaSy",
   description:
-    "Terms of Service for SaaSy, a customer health scoring and churn prediction platform by SaaSy Solutions LLC.",
+    "Terms of Service for SaaSy, an AI-native business operating system by SaaSy Solutions LLC.",
 };
 
 export default function TermsOfServicePage() {
@@ -67,11 +67,13 @@ export default function TermsOfServicePage() {
               2. Service Description
             </h2>
             <p className="text-saasy-muted font-[family-name:var(--font-poppins)] leading-relaxed">
-              SaaSy is a customer health scoring and churn prediction platform
-              operated by SaaSy Solutions LLC. The Service provides tools for
-              monitoring customer engagement, predicting churn risk, generating
-              proactive alerts, and delivering actionable insights to help
-              businesses retain their customers.
+              SaaSy is an AI-native business operating system operated by
+              SaaSy Solutions LLC that helps entrepreneurs manage formation,
+              compliance, CRM, finances, and operations with AI-powered
+              guidance. The Service provides tools for compliance tracking,
+              CRM and contact management, AI-driven business guidance,
+              proactive alerts, multi-business support, and document
+              management.
             </p>
             <p className="mt-3 text-saasy-muted font-[family-name:var(--font-poppins)] leading-relaxed">
               The Service is provided as a cloud-based software-as-a-service
@@ -120,7 +122,8 @@ export default function TermsOfServicePage() {
                   Starter &mdash; $49/month
                 </p>
                 <p className="mt-1 font-[family-name:var(--font-poppins)] text-sm text-saasy-muted">
-                  Up to 100 tracked customers, 1 integration, 3 team members
+                  1 business, compliance tracker, CRM (50 contacts), daily
+                  briefing, email alerts
                 </p>
               </div>
               <div className="p-5">
@@ -128,8 +131,8 @@ export default function TermsOfServicePage() {
                   Growth &mdash; $149/month
                 </p>
                 <p className="mt-1 font-[family-name:var(--font-poppins)] text-sm text-saasy-muted">
-                  Up to 1,000 tracked customers, 5 integrations, 10 team
-                  members
+                  Up to 5 businesses, all modules, AI guidance, Slack alerts,
+                  API access, advanced analytics
                 </p>
               </div>
               <div className="p-5">
@@ -137,8 +140,8 @@ export default function TermsOfServicePage() {
                   Scale &mdash; $399/month
                 </p>
                 <p className="mt-1 font-[family-name:var(--font-poppins)] text-sm text-saasy-muted">
-                  Unlimited tracked customers, unlimited integrations, 50 team
-                  members
+                  Unlimited businesses, unlimited integrations, priority
+                  support, custom automations, dedicated onboarding
                 </p>
               </div>
             </div>

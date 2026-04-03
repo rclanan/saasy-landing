@@ -4,14 +4,9 @@ import { useState } from "react";
 
 const FAQ_ITEMS = [
   {
-    question: "What happens after my trial ends?",
+    question: "How does SaaSy handle compliance tracking?",
     answer:
-      "Your 14-day trial includes full Growth plan access — no credit card required. When it ends, choose any plan to continue. Your data is preserved for 30 days if you need more time to decide.",
-  },
-  {
-    question: "Can I switch plans later?",
-    answer:
-      "Yes. Upgrade or downgrade anytime from your dashboard. Changes take effect at the start of your next billing cycle, prorated automatically.",
+      "SaaSy monitors your regulatory deadlines, tax filings, and license renewals automatically. You get proactive alerts before anything is due — so you never miss a deadline or pay a late fee.",
   },
   {
     question: "Is my data secure?",
@@ -19,19 +14,29 @@ const FAQ_ITEMS = [
       "Absolutely. We use enterprise-grade encryption (AES-256 at rest, TLS 1.2+ in transit), SOC 2 compliance, and strict tenant isolation. Your business data is never shared across accounts.",
   },
   {
+    question: "Can I manage multiple businesses?",
+    answer:
+      "Yes. SaaSy is built for founders who run more than one venture. Switch between businesses from a single dashboard — each with its own financials, compliance calendar, and AI insights.",
+  },
+  {
+    question: "What happens after my trial ends?",
+    answer:
+      "Your 14-day trial includes full Growth plan access — no credit card required. When it ends, choose any plan to continue. Your data is preserved for 30 days if you need more time to decide.",
+  },
+  {
+    question: "Can I switch plans or cancel anytime?",
+    answer:
+      "Yes to both. Upgrade, downgrade, or cancel from your billing settings with one click. No long-term contracts, no cancellation fees. Changes take effect at the start of your next billing cycle, prorated automatically.",
+  },
+  {
     question: "What integrations do you support?",
     answer:
-      "Salesforce, HubSpot, Stripe, and Jira out of the box. Our API (Growth plan and above) lets you connect any tool in your stack.",
+      "Connect your Stripe for automatic financial tracking, your email for CRM sync, and Slack for real-time business alerts — no manual data entry. We also support HubSpot, Salesforce, and Jira, with an open API on Growth plans and above.",
   },
   {
     question: "How long does setup take?",
     answer:
-      "Most entrepreneurs are up and running in under 2 minutes. Answer a few questions about your business, and SaaSy builds your personalized action plan immediately.",
-  },
-  {
-    question: "Can I cancel anytime?",
-    answer:
-      "Yes. Cancel from your billing settings with one click. No long-term contracts, no cancellation fees.",
+      "Most founders are up and running in under 2 minutes. Answer a few questions about your business, and SaaSy builds your personalized action plan immediately.",
   },
 ];
 

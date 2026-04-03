@@ -13,10 +13,10 @@ export const POSTS: BlogPost[] = [
   {
     slug: "reduce-churn-with-health-scoring",
     title:
-      "How Health Scoring Reduced Our Churn by 30%",
+      "How AI Health Scoring Helped Founders Protect $380K in Revenue",
     excerpt:
-      "Learn how proactive health monitoring helps " +
-      "you catch at-risk accounts before they leave.",
+      "Learn how founders use AI-powered health scoring to spot " +
+      "business risks early and protect revenue before problems escalate.",
     date: "2026-03-15",
     readTime: "5 min read",
     author: "Maya Chen",
@@ -78,15 +78,15 @@ If you're still tracking customer health in spreadsheets — or worse, not track
       },
     ],
     cta: "Start your free 14-day trial and see your " +
-      "customer health scores within minutes.",
+      "business health scores within minutes.",
   },
   {
     slug: "onboarding-checklist-for-smb-saas",
     title:
-      "The Ultimate Onboarding Checklist for SMB SaaS",
+      "The Essential Business Launch Checklist Every First-Time Founder Needs",
     excerpt:
-      "A step-by-step guide to getting new customers " +
-      "to their first aha moment faster.",
+      "A step-by-step guide to compliance, formation, and " +
+      "operational setup that every new founder needs to get right.",
     date: "2026-03-08",
     readTime: "7 min read",
     author: "Jordan Park",
@@ -175,18 +175,18 @@ SaaSy's guided onboarding module was built specifically to solve these problems.
 The best onboarding doesn't feel like onboarding. It feels like your product naturally guiding the customer to success.`,
       },
     ],
-    cta: "See how SaaSy's guided onboarding helps new " +
-      "customers reach value faster. Start your free " +
+    cta: "See how SaaSy guides founders through every step " +
+      "of launching a business. Start your free " +
       "14-day trial.",
   },
   {
     slug: "ai-powered-customer-success",
     title:
-      "AI-Powered Customer Success: " +
-      "What Actually Works",
+      "How AI Is Replacing the Back Office " +
+      "for Solo Founders",
     excerpt:
-      "Cutting through the hype to find AI " +
-      "applications that genuinely move the needle.",
+      "How AI handles compliance, CRM, alerts, and " +
+      "operations so founders can focus on growth.",
     date: "2026-02-28",
     readTime: "6 min read",
     author: "Alex Rivera",
@@ -255,8 +255,8 @@ What SaaSy doesn't do: we don't auto-send emails on behalf of your CSMs. We don'
 The goal is to make your CS team feel like they have superpowers — not to make them feel replaceable.`,
       },
     ],
-    cta: "Experience AI-powered customer success that " +
-      "actually works. Start your free 14-day trial " +
+    cta: "Experience AI-powered business operations that " +
+      "actually work. Start your free 14-day trial " +
       "of SaaSy.",
   },
 ];

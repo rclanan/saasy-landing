@@ -94,7 +94,7 @@ export function SiteNav(): React.ReactElement {
               Sign In
             </Link>
             <Link
-              href="https://app.hellosaasy.ai/auth/register"
+              href="https://app.hellosaasy.ai/signup"
               className="hidden rounded-full bg-saasy-pink px-4
                 py-2 font-[family-name:var(--font-poppins)]
                 text-sm font-semibold uppercase tracking-wider
@@ -251,7 +251,7 @@ export function SiteNav(): React.ReactElement {
             Sign In
           </Link>
           <Link
-            href="https://app.hellosaasy.ai/auth/register"
+            href="https://app.hellosaasy.ai/signup"
             onClick={close}
             className="w-full rounded-full bg-saasy-pink px-4
               py-3 text-center

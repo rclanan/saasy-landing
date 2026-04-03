@@ -7,8 +7,8 @@ import { POSTS } from "./content";
 export const metadata: Metadata = {
   title: "Blog — SaaSy",
   description:
-    "Insights on customer success, churn reduction, " +
-    "and growing your SaaS business.",
+    "Insights on business operations, founder strategies, " +
+    "and scaling with AI.",
 };
 
 export default function BlogPage() {
@@ -26,8 +26,8 @@ export default function BlogPage() {
           className="mt-4 font-[family-name:var(--font-poppins)]
             text-lg text-saasy-muted"
         >
-          Insights on customer success, churn reduction,
-          and growing your SaaS business.
+          Insights on business operations, founder strategies,
+          and scaling with AI.
         </p>
 
         <div className="mt-10 space-y-6">

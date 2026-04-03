@@ -51,7 +51,7 @@ export function Hero(): React.ReactElement {
             justify-center gap-4 sm:flex-row"
         >
           <Link
-            href="https://app.hellosaasy.ai/auth/register"
+            href="https://app.hellosaasy.ai/signup"
             className="cta-pulse inline-flex rounded-full
               bg-saasy-pink px-8 py-4
               font-[family-name:var(--font-poppins)] text-base
