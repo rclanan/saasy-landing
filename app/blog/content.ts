@@ -13,7 +13,7 @@ export const POSTS: BlogPost[] = [
   {
     slug: "reduce-churn-with-health-scoring",
     title:
-      "How AI Health Scoring Helped Founders Protect $380K in Revenue",
+      "How Intelligent Health Scoring Helped Founders Protect $380K in Revenue",
     excerpt:
       "Learn how founders use AI-powered health scoring to spot " +
       "business risks early and protect revenue before problems escalate.",
@@ -182,7 +182,7 @@ The best onboarding doesn't feel like onboarding. It feels like your product nat
   {
     slug: "ai-powered-customer-success",
     title:
-      "How AI Is Replacing the Back Office " +
+      "How Automation Is Replacing the Back Office " +
       "for Solo Founders",
     excerpt:
       "How AI handles compliance, CRM, alerts, and " +
@@ -255,7 +255,7 @@ What SaaSy doesn't do: we don't auto-send emails on behalf of your CSMs. We don'
 The goal is to make your CS team feel like they have superpowers — not to make them feel replaceable.`,
       },
     ],
-    cta: "Experience AI-powered business operations that " +
+    cta: "Experience intelligent business operations that " +
       "actually work. Start your free 14-day trial " +
       "of SaaSy.",
   },

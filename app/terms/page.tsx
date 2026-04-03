@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Terms of Service | SaaSy",
   description:
-    "Terms of Service for SaaSy, an AI-native business operating system by SaaSy Solutions LLC.",
+    "Terms of Service for SaaSy, an intelligent business operating system by SaaSy Solutions LLC.",
 };
 
 export default function TermsOfServicePage() {
@@ -67,9 +67,9 @@ export default function TermsOfServicePage() {
               2. Service Description
             </h2>
             <p className="text-saasy-muted font-[family-name:var(--font-poppins)] leading-relaxed">
-              SaaSy is an AI-native business operating system operated by
+              SaaSy is an intelligent business operating system operated by
               SaaSy Solutions LLC that helps entrepreneurs manage formation,
-              compliance, CRM, finances, and operations with AI-powered
+              compliance, CRM, finances, and operations with intelligent
               guidance. The Service provides tools for compliance tracking,
               CRM and contact management, AI-driven business guidance,
               proactive alerts, multi-business support, and document
@@ -131,7 +131,7 @@ export default function TermsOfServicePage() {
                   Growth &mdash; $149/month
                 </p>
                 <p className="mt-1 font-[family-name:var(--font-poppins)] text-sm text-saasy-muted">
-                  Up to 5 businesses, all modules, AI guidance, Slack alerts,
+                  Up to 5 businesses, all modules, smart guidance, Slack alerts,
                   API access, advanced analytics
                 </p>
               </div>

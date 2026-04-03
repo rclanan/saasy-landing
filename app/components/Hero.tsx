@@ -30,7 +30,7 @@ export function Hero(): React.ReactElement {
             text-5xl leading-[1.1] font-extrabold tracking-tight
             text-white sm:text-7xl"
         >
-          Your AI business
+          Your intelligent business
           <br />
           <span className="gradient-text">co-founder</span>
         </h1>
@@ -42,7 +42,7 @@ export function Hero(): React.ReactElement {
         >
           SaaSy guides you from first idea to thriving
           enterprise. Every stage of your business journey,
-          managed by AI that works alongside you.
+          managed by technology that works alongside you.
         </p>
 
         {/* CTAs */}

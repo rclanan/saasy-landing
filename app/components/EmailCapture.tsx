@@ -85,7 +85,7 @@ export function EmailCapture(): React.ReactElement {
           >
             Check your inbox for a welcome email. We&apos;ll
             send you weekly insights on business formation,
-            compliance, scaling, and AI strategies.
+            compliance, scaling, and automation strategies.
           </p>
         </div>
       </section>
@@ -115,7 +115,7 @@ export function EmailCapture(): React.ReactElement {
             text-saasy-muted"
         >
           Join 2,400+ founders getting weekly insights on
-          business formation, compliance, scaling, and AI strategies.
+          business formation, compliance, scaling, and automation strategies.
         </p>
 
         <form

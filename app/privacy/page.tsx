@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Privacy Policy | SaaSy",
   description:
-    "Privacy Policy for SaaSy, an AI-native business operating system by SaaSy Solutions LLC.",
+    "Privacy Policy for SaaSy, an intelligent business operating system by SaaSy Solutions LLC.",
 };
 
 export default function PrivacyPolicyPage() {
@@ -50,9 +50,9 @@ export default function PrivacyPolicyPage() {
               &quot;our&quot;) is committed to protecting your privacy. This
               Privacy Policy explains how we collect, use, disclose, and
               safeguard your information when you use SaaSy (&quot;the
-              Service&quot;), our AI-native business operating system that
+              Service&quot;), our intelligent business operating system that
               helps entrepreneurs manage formation, compliance, CRM, finances,
-              and operations with AI-powered guidance.
+              and operations with intelligent guidance.
             </p>
             <p className="mt-3 text-saasy-muted font-[family-name:var(--font-poppins)] leading-relaxed">
               By using the Service, you consent to the data practices described
@@ -118,7 +118,7 @@ export default function PrivacyPolicyPage() {
                 <span className="text-white font-medium">
                   Provide and maintain the Service
                 </span>{" "}
-                &mdash; delivering compliance tracking, CRM, AI guidance,
+                &mdash; delivering compliance tracking, CRM, intelligent guidance,
                 proactive alerts, and business operations management
               </li>
               <li>

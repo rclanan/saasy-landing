@@ -40,7 +40,7 @@ export function ConsultingPromo() {
                   text-base text-saasy-muted sm:text-lg"
               >
                 Our senior engineering team designs, builds, and manages
-                custom AI automations, integrations, and workflow systems.
+                custom automations, integrations, and workflow systems.
                 One partner replaces multiple tools, contractors, and
                 inefficiencies &mdash; live in weeks, not months.
               </p>

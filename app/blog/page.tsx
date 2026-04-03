@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "Blog — SaaSy",
   description:
     "Insights on business operations, founder strategies, " +
-    "and scaling with AI.",
+    "and scaling with automation.",
 };
 
 export default function BlogPage() {
@@ -27,7 +27,7 @@ export default function BlogPage() {
             text-lg text-saasy-muted"
         >
           Insights on business operations, founder strategies,
-          and scaling with AI.
+          and scaling with automation.
         </p>
 
         <div className="mt-10 space-y-6">

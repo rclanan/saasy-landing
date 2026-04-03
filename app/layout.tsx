@@ -10,23 +10,23 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "SaaSy — Your AI Business Co-Founder",
+  title: "SaaSy — Your Intelligent Business Co-Founder",
   description:
-    "AI-native business operating system that guides " +
+    "intelligent business operating system that guides " +
     "entrepreneurs from idea to thriving enterprise. " +
-    "Formation, compliance, CRM, and AI guidance — all in one.",
+    "Formation, compliance, CRM, and smart guidance — all in one.",
   keywords: [
     "entrepreneur",
     "business formation",
     "compliance",
     "CRM",
-    "AI guidance",
+    "smart guidance",
     "business operating system",
   ],
   openGraph: {
-    title: "SaaSy — Your AI Business Co-Founder",
+    title: "SaaSy — Your Intelligent Business Co-Founder",
     description:
-      "AI-native business operating system that guides " +
+      "intelligent business operating system that guides " +
       "entrepreneurs from idea to thriving enterprise.",
     url: "https://hellosaasy.ai",
     siteName: "SaaSy",
@@ -34,9 +34,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "SaaSy — Your AI Business Co-Founder",
+    title: "SaaSy — Your Intelligent Business Co-Founder",
     description:
-      "AI-native business operating system that guides " +
+      "intelligent business operating system that guides " +
       "entrepreneurs from idea to thriving enterprise.",
   },
 };
@@ -48,7 +48,7 @@ const structuredData = {
   applicationCategory: 'BusinessApplication',
   operatingSystem: 'Web',
   description:
-    'AI-native business operating system that guides ' +
+    'intelligent business operating system that guides ' +
     'entrepreneurs from idea to thriving enterprise.',
   url: 'https://hellosaasy.ai',
   offers: {

@@ -34,7 +34,7 @@ const COMPARISONS: ComparisonRow[] = [
     otherTools: "1–4 weeks",
   },
   {
-    feature: "AI-powered insights",
+    feature: "Intelligent insights",
     saasy: "Built-in",
     spreadsheets: "None",
     hiring: "Depends on hire",
@@ -55,8 +55,8 @@ const COMPARISONS: ComparisonRow[] = [
     otherTools: "Sometimes",
   },
   {
-    feature: "AI business insights",
-    saasy: "Built-in co-founder AI",
+    feature: "Intelligent business insights",
+    saasy: "Built-in intelligent co-pilot",
     spreadsheets: "Not possible",
     hiring: "Custom build required",
     otherTools: "Rare / enterprise only",
@@ -116,7 +116,7 @@ export default function ComparePage() {
           >
             Replace your spreadsheets, your bookkeeper, your
             compliance tracker, and three SaaS subscriptions with
-            one AI-powered business operating system.
+            one intelligent business operating system.
           </p>
         </div>
       </section>
@@ -194,7 +194,7 @@ export default function ComparePage() {
               font-[family-name:var(--font-poppins)] text-lg
               text-saasy-muted"
           >
-            SaaSy gives you compliance tracking, CRM, AI guidance,
+            SaaSy gives you compliance tracking, CRM, smart guidance,
             and proactive alerts in one platform &mdash; for less than
             the cost of a single part-time hire. Start your 14-day
             free trial and see the difference.

@@ -79,7 +79,7 @@ export default function Home(): React.ReactElement {
                 text-lg text-saasy-muted"
             >
               From formation to scaling, SaaSy manages every
-              stage of your business lifecycle with AI-powered
+              stage of your business lifecycle with intelligent
               guidance.
             </p>
           </div>
@@ -99,7 +99,7 @@ export default function Home(): React.ReactElement {
             />
             <FeatureCard
               icon={<IconAI />}
-              title="AI Guidance"
+              title="Smart Guidance"
               description="Personalized recommendations for your business at every growth stage. Like having a mentor on call."
             />
             <FeatureCard
@@ -168,7 +168,7 @@ export default function Home(): React.ReactElement {
               features={[
                 "Up to 5 businesses",
                 "All modules",
-                "AI guidance",
+                "Smart guidance",
                 "Slack alerts",
                 "API access",
                 "Advanced analytics",

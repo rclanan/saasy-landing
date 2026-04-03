@@ -6,7 +6,7 @@ import { MarketingFooter } from "../components/MarketingFooter";
 export const metadata: Metadata = {
   title: "Services | SaaSy Solutions",
   description:
-    "Custom AI automation, integrations, and systems consulting from " +
+    "Custom automation, integrations, and systems consulting from " +
     "the team behind SaaSy. 25+ years of senior engineering experience.",
 };
 
@@ -35,13 +35,13 @@ const SERVICES: Service[] = [
     href: "https://saasysolutionsllc.com/#services",
   },
   {
-    name: "AI-Powered Customer Experience",
+    name: "Intelligent Customer Experience",
     description:
       "Deploy intelligent chatbots, automated response systems, " +
       "and sentiment analysis that handle routine interactions " +
       "so your team can focus on high-value conversations.",
     highlights: [
-      "24/7 AI-powered support",
+      "24/7 intelligent support",
       "Sentiment analysis & routing",
       "Multi-channel deployment",
       "Live in 2-4 weeks",
@@ -65,7 +65,7 @@ const SERVICES: Service[] = [
     href: "https://saasysolutionsllc.com/#services",
   },
   {
-    name: "Custom AI Development & Integration",
+    name: "Custom Systems Development & Integration",
     description:
       "Need something the off-the-shelf tools can't do? We " +
       "design and build custom AI solutions — machine learning " +
@@ -96,7 +96,7 @@ const SERVICES: Service[] = [
     href: "https://saasysolutionsllc.com/#services",
   },
   {
-    name: "AI-Powered Search & Discovery",
+    name: "Intelligent Search & Discovery",
     description:
       "Help your customers and team find exactly what they need. " +
       "We implement semantic search, recommendation engines, and " +

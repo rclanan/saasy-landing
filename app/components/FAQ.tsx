@@ -16,7 +16,7 @@ const FAQ_ITEMS = [
   {
     question: "Can I manage multiple businesses?",
     answer:
-      "Yes. SaaSy is built for founders who run more than one venture. Switch between businesses from a single dashboard — each with its own financials, compliance calendar, and AI insights.",
+      "Yes. SaaSy is built for founders who run more than one venture. Switch between businesses from a single dashboard — each with its own financials, compliance calendar, and intelligent insights.",
   },
   {
     question: "What happens after my trial ends?",

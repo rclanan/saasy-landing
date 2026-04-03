@@ -18,7 +18,7 @@ const BLOG_POSTS = [
   },
   {
     title:
-      "AI-Powered Customer Success: " +
+      "Intelligent Customer Success: " +
       "What Actually Works",
     description:
       "Cutting through the hype to find AI " +
