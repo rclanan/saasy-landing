@@ -188,6 +188,23 @@ export default function Home(): React.ReactElement {
               ]}
             />
           </div>
+
+          {/* Consulting upsell */}
+          <p
+            className="mt-10 text-center
+              font-[family-name:var(--font-poppins)] text-sm
+              text-saasy-muted"
+          >
+            Need custom automations, integrations, or a dedicated
+            engineering partner?{" "}
+            <a
+              href="https://saasysolutionsllc.com/consultation"
+              className="font-medium text-saasy-orange
+                transition-colors hover:text-white"
+            >
+              Talk to our consulting team &rarr;
+            </a>
+          </p>
         </div>
       </section>
 
