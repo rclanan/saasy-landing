@@ -28,7 +28,7 @@ export function MarketingFooter(): React.ReactElement {
               </li>
               <li>
                 <Link
-                  href="#pricing"
+                  href="/pricing"
                   className="text-saasy-muted font-[family-name:var(--font-poppins)]
                     text-sm hover:text-white transition-colors"
                 >
